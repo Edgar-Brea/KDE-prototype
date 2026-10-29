@@ -24,7 +24,6 @@ from scipy.interpolate import PchipInterpolator  # noqa: E402
 from src.analysis.common import RETAINED, TYPES, load_config, read_exports  # noqa: E402
 
 INK, MUTED, GRID, FADE_BG = "#1f1f1f", "#6b6b6b", "#d9d9d9", "#ececec"
-LIGHT_FILLS = ("phenomenon", "principle")    # dark text on these, white on the rest
 
 
 def year_table(comps, index, window):
@@ -93,7 +92,8 @@ def prepare(comps, index, acfg):
 
 def draw(shares, n_abs, thin, colours, smooth, path, tick_every=5, dpi=300):
     fig, (ax, sx) = plt.subplots(2, 1, figsize=(7.2, 4.6), sharex=True,
-                                 gridspec_kw={"height_ratios": [5, 1], "hspace": 0.06})
+                                 gridspec_kw={"height_ratios": [5, 1], "hspace": 0.06},
+                                 facecolor="white")
     lo, hi = n_abs.index[n_abs > 0].min() - 0.5, n_abs.index.max() + 0.5
     fade = spans(thin)
     for a, b in fade:
@@ -119,7 +119,7 @@ def draw(shares, n_abs, thin, colours, smooth, path, tick_every=5, dpi=300):
         h = top[k][at] - bottom[k][at]
         if h > 0.05:
             ax.text(x[at], (bottom[k][at] + top[k][at]) / 2, t.capitalize(), ha="center", va="center",
-                    fontsize=8.5, color=INK if t in LIGHT_FILLS else "white", zorder=4)
+                    fontsize=8.5, color="white", zorder=4)
 
     ax.set_ylim(0, 1)
     ax.set_yticks([0, 0.25, 0.5, 0.75, 1])
@@ -147,7 +147,7 @@ def draw(shares, n_abs, thin, colours, smooth, path, tick_every=5, dpi=300):
             a.spines[s].set_color(GRID)
         a.tick_params(colors=MUTED, labelsize=8, length=3)
     sx.grid(axis="y", color=GRID, lw=0.5, zorder=0)
-    fig.savefig(path, dpi=dpi, bbox_inches="tight")
+    fig.savefig(path, dpi=dpi, bbox_inches="tight", facecolor="white")
     return fig
 
 
@@ -167,7 +167,7 @@ def main():
     n_index, n_comps = int(n_abs.sum()), int(counts.to_numpy().sum())
 
     fig = draw(smooth, n_abs, thin, colours, True, os.path.join(out, "fig1_type_composition.png"), tick_every)
-    fig.savefig(os.path.join(out, "fig1_type_composition.pdf"), bbox_inches="tight",
+    fig.savefig(os.path.join(out, "fig1_type_composition.pdf"), bbox_inches="tight", facecolor="white",
                 metadata={"CreationDate": None})   # no timestamp, so reruns give identical files
     plt.close(fig)
 

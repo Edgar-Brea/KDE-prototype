@@ -63,10 +63,10 @@ analysis:
     it is the only search that runs the whole timeline; the antecedent searches stop between 2005 and 2011.
   smoothing_years: 3               # centred window; counts are pooled across it, then shares taken
   colours:                         # one per type, bottom band to top; same in every output
-    phenomenon: "#8CCDF0"
-    principle: "#22A6A8"
-    means: "#B5441A"
-    purpose: "#5A1414"
+    phenomenon: "#005f73"
+    principle: "#0a9396"
+    means: "#ca6702"
+    purpose: "#9b2226"
 
 # Scoring against human coding (python ../evaluation/score_coding.py, see the README). No API calls.
 evaluation:

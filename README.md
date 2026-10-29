@@ -1,4 +1,6 @@
-# KDE: knowledge-component extraction
+# Knowledge Deconstruction Engine (KDE)
+
+### An LLM pipeline that breaks scientific abstracts into typed knowledge components, so that what a technology is made of can be observed at scale.
 
 KDE reads paper abstracts with a language model and lists their knowledge components, following a fixed codebook based on Arthur's account of technology (*The Nature of Technology*, 2009):
 
