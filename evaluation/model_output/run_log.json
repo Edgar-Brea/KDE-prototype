@@ -1,0 +1,141 @@
+{
+  "run_id": "20261026T072105Z_test_v4",
+  "timestamp_start_utc": "2026-10-26T07:21:05+00:00",
+  "timestamp_end_utc": "2026-10-26T07:22:01+00:00",
+  "duration_s": 56.6,
+  "model": {
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com",
+    "id": "deepseek-flash",
+    "returned_by_api": [
+      "deepseek-flash"
+    ],
+    "settings": {
+      "temperature": 0,
+      "max_tokens": 4096,
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "settings_note": "lowest reasoning effort = thinking disabled; temperature 0 (honoured in non-thinking mode); top_p fixed at 1.0 by the API"
+  },
+  "prompt_file": "prompts/system_v4.md",
+  "prompt_sha256": "d3fe6a05ed40a6f874ea8b6983351e4c912841d64746c394959ff32fb3a229e7",
+  "frozen": {
+    "file": "prompts/FROZEN",
+    "prompt_matches": true,
+    "codebook_matches": true
+  },
+  "user_message_sha256": "c1b8f7fff62e57f35b5f69e018d2da8e366975517bc4db08d33d7e9a760578ac",
+  "codebook_file": "prompts/codebook_v3.md",
+  "codebook_sha256": "fd4069db8a463c5900a4192f3478237653a0e8016923ccb5182e12d2f42916a3",
+  "resolution_message_sha256": "41c310f8234f889ced3b0de10a26ce8a27395e13ad9d5af58aa25aee392f4e7b",
+  "n_abstracts": 50,
+  "n_with_components": 50,
+  "components_total": 596,
+  "components_per_type": {
+    "phenomenon": 211,
+    "principle": 58,
+    "means": 204,
+    "purpose": 123
+  },
+  "components_per_confidence": {
+    "high": 482,
+    "medium": 112,
+    "low": 2
+  },
+  "components_per_type_confidence": {
+    "phenomenon": {
+      "high": 180,
+      "medium": 31,
+      "low": 0
+    },
+    "principle": {
+      "high": 21,
+      "medium": 37,
+      "low": 0
+    },
+    "means": {
+      "high": 191,
+      "medium": 11,
+      "low": 2
+    },
+    "purpose": {
+      "high": 90,
+      "medium": 33,
+      "low": 0
+    }
+  },
+  "abstracts_retried": 30,
+  "failures_first_try": {
+    "span": 1,
+    "overlap": 49,
+    "type": 0,
+    "confidence": 0,
+    "field": 0,
+    "json": 0
+  },
+  "failures_after_retry": {
+    "span": 0,
+    "overlap": 6,
+    "type": 0,
+    "confidence": 0,
+    "field": 0,
+    "json": 0
+  },
+  "failure_count_unit": "components, except overlap failures, which are counted in pairs",
+  "span_failures": {
+    "first_try": 1,
+    "after_retry": 0
+  },
+  "overlap_failures": {
+    "first_try": 49,
+    "after_retry": 6,
+    "resolved": 5,
+    "dropped": 0,
+    "moot": 1
+  },
+  "overlap_failures_note": "pairs. after_retry = resolved + dropped + moot; moot = pair whose other member was already dropped by an earlier resolution; dropped = resolution call failed, both components dropped",
+  "resolution_calls": 5,
+  "resolution_call_errors": {},
+  "components_dropped": 5,
+  "api_errors": 0,
+  "api_error_messages": {},
+  "http_transient_retries": 0,
+  "tokens": {
+    "input": 170754,
+    "input_cache_hit": 137856,
+    "input_cache_miss": 32898,
+    "output": 38500
+  },
+  "cost_usd": 0.056897,
+  "calls_at_peak": 85,
+  "calls_off_peak": 0,
+  "pricing": {
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "checked": "2026-10-24",
+    "peak": {
+      "input_cache_hit": 0.006,
+      "input_cache_miss": 0.3,
+      "output": 1.2
+    },
+    "off_peak": {
+      "input_cache_hit": 0.003,
+      "input_cache_miss": 0.15,
+      "output": 0.6
+    },
+    "peak_hours_utc": [
+      [
+        1,
+        4
+      ],
+      [
+        6,
+        10
+      ]
+    ]
+  }
+}

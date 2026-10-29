@@ -1,0 +1,12 @@
+.env
+.DS_Store
+__pycache__/
+*.pyc
+
+# Your own runs
+tool/runs/
+
+# Gold set and anything holding its abstracts, labels or evidence: never committed
+evaluation/gold/
+evaluation/adjudication.xlsx
+evaluation/side_by_side.md

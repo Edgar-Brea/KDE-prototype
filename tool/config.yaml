@@ -1,0 +1,96 @@
+# Run configuration. Swap corpus, codebook/prompt and model here; no code changes needed.
+# Paths are relative to tool/, the folder every command runs from.
+
+prompt: prompts/system_v4.md
+frozen: prompts/FROZEN             # <role> <filename> <sha256>; runs refuse to start unless prompt and codebook both match
+codebook: prompts/codebook_v3.md  # system prompt for overlap resolution calls
+
+corpus:
+  path: example/abstracts.csv      # .parquet, .csv or .jsonl
+  columns:                         # generic name -> column in the file
+    id: id
+    title: title
+    abstract: abstract
+    year: year
+    period: period                 # optional; carried into the exports
+    strand: strand                 # optional; search strand(s) that found the paper, '|'-joined; in the exports
+
+model:
+  provider: deepseek
+  base_url: https://api.deepseek.com
+  api_key_env: DEEPSEEK_API_KEY
+  id: deepseek-flash               # DeepSeek V4.1 Flash (version DeepSeek-V4.1-Flash-1017)
+  # Lowest reasoning effort: thinking disabled. With thinking off, temperature is honoured
+  # (in thinking mode it is ignored) and top_p is fixed at 1.0 by the API.
+  params:
+    temperature: 0
+    max_tokens: 4096
+    response_format: {type: json_object}
+    thinking: {type: disabled}
+  timeout_s: 120
+  max_http_retries: 4              # transient errors (timeouts, 429, 5xx) only
+
+# USD per 1M tokens. Source: https://api-docs.deepseek.com/quick_start/pricing (checked 2026-10-27)
+pricing:
+  checked: "2026-10-27"
+  source: https://api-docs.deepseek.com/quick_start/pricing
+  peak:     {input_cache_hit: 0.006, input_cache_miss: 0.30, output: 1.20}
+  off_peak: {input_cache_hit: 0.003, input_cache_miss: 0.15, output: 0.60}
+  # Peak = Mon-Fri, these UTC hour ranges [start, end). Off-peak is every other hour, weekends and
+  # Chinese public holidays in full. Holidays are not modelled: the runner treats them as peak,
+  # so it may pause when it needn't but never runs at peak rates.
+  peak_hours_utc: [[1, 4], [6, 10]]
+
+# Full-corpus run (python -m src.run --full --cap <USD>). A capped run resumes in the same folder.
+full_run:
+  dir: runs/full
+  seed: 20261027                   # shuffles the eligible ids once; the order never changes between restarts
+  min_chars: 200                   # abstracts shorter than this (or missing) are excluded
+  report_by: period                # corpus column for "share done per ..." in the progress report
+  workers: {start: 8, raise_to: 16, after_minutes: 15}   # raise only if no HTTP 429 in the first 15 min
+
+# Export and Figure 1 (python -m src.analysis.<script>). No API calls.
+analysis:
+  run_dir: runs/full
+  exports_dir: ../results
+  figures_dir: ../results
+  long_text_chars: 5000            # abstracts longer than this get status excluded_long_text
+  thin_year_abstracts: 30          # years with fewer retained abstracts are faded in Figure 1
+  fig1_strand: crispr              # Figure 1: only papers whose strand includes this search (null: all strands)
+  fig1_from_year: 2002             # Figure 1 starts here (null: first year with abstracts)
+  fig1_tick_years: 5               # year ticks on Figure 1's x-axis every this many years
+  fig1_scope_note: >-              # why, for the caption
+    it is the only search that runs the whole timeline; the antecedent searches stop between 2005 and 2011.
+  smoothing_years: 3               # centred window; counts are pooled across it, then shares taken
+  colours:                         # one per type, bottom band to top; same in every output
+    phenomenon: "#8CCDF0"
+    principle: "#22A6A8"
+    means: "#B5441A"
+    purpose: "#5A1414"
+
+# Scoring against human coding (python ../evaluation/score_coding.py, see the README). No API calls.
+evaluation:
+  out_dir: ../evaluation
+  model_run: ../evaluation/model_output        # the frozen prompt's output on the test set
+  sample_set: test                 # rows of `assignments`: sample_id -> work id, period
+  assignments: ../evaluation/test_set.csv
+  abstracts: ../evaluation/gold/test_abstracts.csv      # gold set, on request: sample_id, title, abstract
+  human_file: ../evaluation/gold/human_coding.xlsx      # gold set, on request
+  human_label: RA
+  human_codebook: codebook_v3.md
+  human_sheet: Components          # one row per component; rows without a sample id continue the one above
+  human_columns: {sample_id: Sample ID, type: Type, label: "Component tags (your words, short)",
+                  evidence: "Evidence (exact words from the abstract)"}
+  ellipsis_rule: true              # trim ellipses at span ends; split at inner ones, located if every piece is found
+  exclude_samples:                 # dropped from both sides of the scoring (sample id: reason)
+    T14: not an abstract
+    T40: not an abstract
+  label_model: sentence-transformers/all-MiniLM-L6-v2   # embeds labels of unpaired components (runs locally)
+  label_min_similarity: 0.5        # list a label candidate only at or above this cosine similarity
+  adjudication_file: ../evaluation/adjudication.xlsx    # local only: holds the coder's labels and evidence
+  adjudication_decisions: ../evaluation/adjudication_decisions.csv   # pair id, row group, Y/N
+  min_overlap: 0.5                 # spans match if they overlap by at least this share of the shorter span
+  bins:                            # time bin -> values of the period column it pools
+    antecedent: [antecedent]
+    early: [early]
+    post: [post]

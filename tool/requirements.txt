@@ -1,0 +1,8 @@
+pandas>=1.3
+pyarrow
+pyyaml
+requests
+openpyxl
+matplotlib
+scipy
+sentence-transformers   # scoring only: label candidates

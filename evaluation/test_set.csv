@@ -1,0 +1,51 @@
+set,sample_id,doc_id,period,stratum,year,title
+test,T01,W4395014028,post,crispr 2021-now,2024,A review of Ribosome profiling and tools used in Ribo-seq data analysis
+test,T02,W2404420368,antecedent,spoligo,1998,"Molecular epidemiology of tuberculosis in Cuba outside of Havana, July 1994-June 1995: utility of spoligotyping versus IS6110 restriction fragment length polymorphism."
+test,T03,W2042386177,antecedent,spoligo,1998,"Pulmonary tuberculosis in Harare, Zimbabwe: analysis by spoligotyping"
+test,T04,W2137721714,early,crispr 2007-2011,2007,CRISPRFinder: a web tool to identify clustered regularly interspaced short palindromic repeats
+test,T05,W2162912294,antecedent,spoligo,2000,Genetic Variation and Evolutionary Origin of the Direct Repeat Locus of Mycobacterium tuberculosis Complex Bacteria
+test,T06,W2107221320,antecedent,spoligo,1999,Stability of Mycobacterium tuberculosis IS 6110 Restriction Fragment Length Polymorphism Patterns and Spoligotypes Determined by Analyzing Serial Isolates from Patients with Drug-Resistant Tuberculosis
+test,T07,W2167999423,early,spoligo,2005,Molecular Genotyping of Mycobacterium tuberculosis Isolates from Turkey
+test,T08,W1942592304,antecedent,spoligo,1999,Evolution and Clonal Traits of Mycobacterium tuberculosis Complex in Guinea-Bissau
+test,T09,W176853890,early,spoligo,2005,The Lack of Association Between Bacille Calmette‐Guerin Vaccination and Clustering of Aboriginals with Tuberculosis in Western Canada
+test,T10,W2907106823,post,crispr 2016-2020,2018,Platforms of in vivo genome editing with inducible Cas9 for advanced cancer modeling
+test,T11,W2083467131,antecedent,phage,1991,Biotechnology of lactic acid bacteria: An european perspective
+test,T12,W2125861735,antecedent,spoligo,1997,Rapid detection of multidrug-resistant tuberculosis
+test,T13,W2099392904,early,crispr 2002-2006,2006,Browsing repeats in genomes: Pygram and an application to non-coding region analysis
+test,T14,W2114592151,post,crispr 2012-2015,2015,Titelbild: Self‐Assembled DNA Nanoclews for the Efficient Delivery of CRISPR–Cas9 for Genome Editing (Angew. Chem. 41/2015)
+test,T15,W2553522691,post,crispr 2012-2015,2014,Progress Towards Creation of a Rhesus Macaque Animal Model for PNH Disease Via Crispr/Cas9 Technology to Knock out the PIG-a Gene
+test,T16,W2097357414,early,phage,2003,Genetic Manipulation ofLactococcus lactisby Using Targeted Group II Introns: Generation of Stable Insertions without Selection
+test,T17,W1967423031,early,phage,2006,Study of intraspecific variations of the bacterium Lactococcus lactis in adaptation to high acidity of the medium
+test,T18,W4413473856,post,crispr 2021-now,2025,Arabidopsis Group I Pumilio RNA-binding factors are vital for embryo development and balancing between growth and stress resistance
+test,T19,W2075947493,antecedent,phage,2000,Identification of four loci isolated from twoStreptococcus thermophilusphage genomes responsible for mediating bacteriophage resistance
+test,T20,W2005460478,antecedent,spoligo,1999,DNA typing ofMycobacterium bovisstrains from the Castlepoint area of the Wairarapa
+test,T21,W4411293183,post,crispr 2021-now,2025,Planetary-scale metagenomic search reveals new patterns of CRISPR targeting
+test,T22,W2110612352,antecedent,generic,2001,The complete genome of the crenarchaeon Sulfolobus solfataricus P2
+test,T23,W200970483,post,crispr 2012-2015,2014,Every Silver Lining has a Cloud: The Scientific and Animal Welfare Issues Surrounding a New Approach to the Production of Transgenic Animals
+test,T24,W1413531086,antecedent,spoligo,2000,Analysis of Mycobacterium tuberculosis transmission patterns in a homeless shelter outbreak.
+test,T25,W2465197867,antecedent,phage,1995,Developing new starters for fermented milk products
+test,T26,W2964674065,post,crispr 2016-2020,2019,"Base editing in crops: current advances, limitations and future implications"
+test,T27,W41831396,antecedent,named,1990,A novel sequence-specific DNA binding protein which interacts with three regularly spaced direct repeats of the CCCTC-motif in the 5'-flanking sequence of the chicken c-myc gene.
+test,T28,W2012875671,early,spoligo,2005,Does Resistance to Pyrazinamide Accurately Indicate the Presence of Mycobacterium bovis ?
+test,T29,W1966827342,antecedent,phage,1993,Bacteriophage and bacteriophage resistance in lactic acid bacteria
+test,T30,W2918488283,post,crispr 2016-2020,2019,DMP1 Ablation in the Rabbit Results in Mineralization Defects and Abnormalities in Haversian Canal/Osteon Microarchitecture
+test,T31,W2096162460,early,crispr 2002-2006,2006,"Mycobacterium tuberculosis complex genetic diversity: mining the fourth international spoligotyping database (SpolDB4) for classification, population genetics and epidemiology"
+test,T32,W2420376897,post,crispr 2016-2020,2016,Inactivation of the CRL4-CDT2-SET8/p21 ubiquitylation and degradation axis underlies the therapeutic efficacy of pevonedistat in melanoma
+test,T33,W2953019923,post,crispr 2016-2020,2017,A conformational checkpoint between DNA binding and cleavage by CRISPR-Cas9
+test,T34,W2064858398,post,crispr 2012-2015,2014,Generation of WNK1 knockout cell lines by CRISPR/Cas-mediated genome editing
+test,T35,W2765147988,post,crispr 2016-2020,2017,Impairment of NADH dehydrogenase and regulation of anaerobic metabolism by the small RNA RyhB and NadE for improved biohydrogen production in Enterobacter aerogenes
+test,T36,W4401451503,post,crispr 2021-now,2024,Viral Vector Delivery Techniques for CRISPR-based Homology-Directed Repair Gene Therapy with a Focus on Cystic Fibrosis
+test,T37,W2160944326,post,crispr 2012-2015,2015,Rapid and marker‐free refactoring of xylose‐fermenting yeast strains with Cas9/CRISPR
+test,T38,W7160756473,post,crispr 2021-now,2026,The Pentatricopeptide Repeat Protein OsPPR7 Confers Cold Tolerance at the Booting Stage in Rice by Regulating ABA and ROS Homeostasis
+test,T39,W2026158782,early,named,2005,Complete genome sequence of the probiotic lactic acid bacterium Lactobacillus acidophilus NCFM
+test,T40,W2086258090,early,crispr 2002-2006,2006,Extraction of DNA from Mouse Tails
+test,T41,W2074319030,early,named,2002,Molecular Evolution of the Nontandemly Repeated Genes of the Histone 3 Multigene Family
+test,T42,W1520347882,early,crispr 2007-2011,2010,Comparative genomic approaches for investigating evolution in the microbial and viral populations of the rumen
+test,T43,W2013721476,early,crispr 2007-2011,2008,Genome Sequence of Thermofilum pendens Reveals an Exceptional Loss of Biosynthetic Pathways without Genome Reduction
+test,T44,W2139841981,early,named,2003,Genus-Specific Protein Binding to the Large Clusters of DNA Repeats (Short Regularly Spaced Repeats) Present in Sulfolobus Genomes
+test,T45,W2034882978,early,phage,2004,Lactococcus bacteriophages isolated from whey and their effects on commercial lactic starters
+test,T46,W2175485670,post,crispr 2012-2015,2015,Synthetic CRISPR RNA-Cas9–guided genome editing in human cells
+test,T47,W1566281701,antecedent,spoligo,1999,The IS 6110 Restriction Fragment Length Polymorphism in Particular Multidrug-Resistant Mycobacterium tuberculosis Strains May Evolve Too Fast for Reliable Use in Outbreak Investigation
+test,T48,W2896524772,post,crispr 2016-2020,2018,Targeted integration in human cells through single crossover mediated by ZFN or CRISPR/Cas9
+test,T49,W1977429572,post,crispr 2012-2015,2014,CRISPR adaptive immune systems of Archaea
+test,T50,W7196946097,post,crispr 2021-now,2026,"Nanomaterial-based biosensors for multi-target disease diagnostics: Machine learning integration, biocompatibility enhancements, and future trends"
