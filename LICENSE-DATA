@@ -1,0 +1,21 @@
+Data licence
+
+Copyright (c) 2026 The authors
+
+1. Data files. The data files in results/ and evaluation/ (CSV, Parquet and JSON
+   files, Figure 1 and its data, the human coding and the model output) are
+   licensed under the Creative Commons Attribution 4.0 International licence
+   (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+   This is subject to points 2 and 3.
+
+2. Abstracts. evaluation/test_abstracts_cc_by.csv and tool/example/ hold the
+   text of published abstracts. Each is under its own CC BY licence, as stated
+   in its row, and is attributed to its authors by the DOI in that row.
+
+3. Evidence spans. The evidence columns (in results/components.parquet,
+   evaluation/human_coding.csv and evaluation/model_output/outputs.jsonl) are
+   short quotations from the original abstracts. They remain under their
+   publishers' terms and are not covered by the CC BY 4.0 licence above.
+
+4. Code. Code anywhere in this repository is licensed under the MIT licence;
+   see LICENSE.

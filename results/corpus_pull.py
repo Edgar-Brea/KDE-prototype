@@ -292,7 +292,7 @@ def full_pull(outdir):
             pull_query(qn, q, rawdir)
     except OutOfCredits:
         sys.exit("\n\nDaily OpenAlex allowance used up. Nothing is lost: everything downloaded so far is "
-                 "saved in data/raw/.\nRerun the same command after 10am Brisbane (midnight UTC) and it "
+                 "saved in data/raw/.\nRerun the same command after midnight UTC and it"
                  "carries on from where it stopped.")
 
     # Seeds: DOI lookups are free; cached so they're fetched once.

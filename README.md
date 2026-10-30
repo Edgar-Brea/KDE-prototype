@@ -20,7 +20,7 @@ This repository holds the tool, the coded CRISPR literature (71,514 abstracts, 8
 Requires Python 3.9 or later and your own [DeepSeek API key](https://platform.deepseek.com) (a free-tier route is planned). The example codes five CC BY abstracts in `tool/example/` and costs about USD 0.002.
 
 ```bash
-git clone <repo-url> kde
+git clone <this repository> kde
 cd kde/tool
 pip install -r requirements.txt
 cp .env.example .env          # then put your key after DEEPSEEK_API_KEY=
@@ -100,7 +100,7 @@ The frozen prompt was run on 50 test abstracts that a trained research assistant
 | Classification | Same type, on paired components | 59% | 83% |
 | Classification | Cohen's kappa (four types) | 0.43 | 0.76 |
 
-Per-type kappa (adjudicated) runs from 0.52 for principle to 0.85 for means. Full tables, the matching rule and per-time-bin results are in [`evaluation/scores.md`](evaluation/scores.md). The model's test-set output, the test IDs, the adjudication decisions (IDs and Y/N only), confusion tables for both matchings, and the script that drew the test set are in `evaluation/`.
+Per-type kappa (adjudicated) runs from 0.52 for principle to 0.85 for means. Full tables, the matching rule and per-time-bin results are in [`evaluation/scores.md`](evaluation/scores.md). The model's test-set output, the test IDs and abstract hashes, the human coding (`human_coding.csv`), the one CC BY test abstract kept in the repository (`test_abstracts_cc_by.csv`), the adjudication decisions (IDs and Y/N only), confusion tables for both matchings, and the script that drew the test set are in `evaluation/`. Data files are under `LICENSE-DATA`, code under `LICENSE`.
 
 The human coding is released in `evaluation/human_coding.csv`: one row per row of the coder's sheet, including rows the scoring leaves out. Abstract text is not in the repository. The script fetches each test abstract by work ID from the OpenAlex API (no key needed; `OPENALEX_API_KEY` is used if set) and checks it against the hash of the text as coded, recorded in `evaluation/test_set.csv`. Two abstracts changed in OpenAlex after coding. The coded text of one, which is CC BY, is in `evaluation/test_abstracts_cc_by.csv` with its licence and DOI. The other is fetched from its Europe PMC preprint record. Abstracts are cached in `evaluation/abstract_cache/`. To rerun:
 
@@ -120,6 +120,14 @@ tool/
   requirements.txt
 results/          CRISPR components, abstract index, Figure 1, corpus note and pull script
 evaluation/       score_coding.py, scores.md, confusion_automatic.csv, confusion_adjudicated.csv,
-                  adjudication_decisions.csv, test_set.csv, draw_samples.py (how the test set was drawn),
+                  adjudication_decisions.csv, test_set.csv (with abstract hashes), human_coding.csv (the
+                  human coding), test_abstracts_cc_by.csv (one CC BY test abstract, with licence and DOI),
+                  draw_samples.py (how the test set was drawn),
                   model_output/ (the frozen prompt's test-set output and run log)
+LICENSE           MIT, for the code
+LICENSE-DATA      CC BY 4.0, for the data files; terms for the abstracts and evidence spans
 ```
+
+## Licence
+
+Code is under the MIT licence ([`LICENSE`](LICENSE)). The data files in `results/` and `evaluation/` are under CC BY 4.0. The abstracts in `tool/example/` and `evaluation/test_abstracts_cc_by.csv` keep their own CC BY licences, attributed by DOI. Evidence spans are short quotations from the original abstracts and remain under their publishers' terms. See [`LICENSE-DATA`](LICENSE-DATA).
