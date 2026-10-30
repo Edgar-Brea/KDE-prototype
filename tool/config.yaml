@@ -68,19 +68,20 @@ analysis:
     means: "#ca6702"
     purpose: "#9b2226"
 
-# Scoring against human coding (python ../evaluation/score_coding.py, see the README). No API calls.
+# Scoring against human coding (python ../evaluation/score_coding.py, see the README). Fetches the test
+# abstracts from OpenAlex (no key needed); no other API calls.
 evaluation:
   out_dir: ../evaluation
   model_run: ../evaluation/model_output        # the frozen prompt's output on the test set
-  sample_set: test                 # rows of `assignments`: sample_id -> work id, period
+  sample_set: test                 # rows of `assignments`: sample_id -> work id, period, abstract_sha256
   assignments: ../evaluation/test_set.csv
-  abstracts: ../evaluation/gold/test_abstracts.csv      # gold set, on request: sample_id, title, abstract
-  human_file: ../evaluation/gold/human_coding.xlsx      # gold set, on request
+  abstracts:                       # fetched by work id from OpenAlex; each must match its abstract_sha256
+    cache: ../evaluation/abstract_cache                # gitignored: verified abstracts, fetched once
+    stored: ../evaluation/test_abstracts_cc_by.csv     # CC BY abstracts whose OpenAlex text changed after coding
+    europepmc: {T18: "PPR:PPR1072129"}                 # OpenAlex text changed after coding; coded text is this record's
+  human_file: ../evaluation/human_coding.csv           # one row per coding-sheet row; sample ids filled down
   human_label: RA
   human_codebook: codebook_v3.md
-  human_sheet: Components          # one row per component; rows without a sample id continue the one above
-  human_columns: {sample_id: Sample ID, type: Type, label: "Component tags (your words, short)",
-                  evidence: "Evidence (exact words from the abstract)"}
   ellipsis_rule: true              # trim ellipses at span ends; split at inner ones, located if every piece is found
   exclude_samples:                 # dropped from both sides of the scoring (sample id: reason)
     T14: not an abstract

@@ -6,7 +6,8 @@ __pycache__/
 # Your own runs
 tool/runs/
 
-# Gold set and anything holding its abstracts, labels or evidence: never committed
-evaluation/gold/
+# Test abstracts (publisher rights) and local scoring outputs that hold them: never committed.
+# The human coding itself is released as evaluation/human_coding.csv.
+evaluation/abstract_cache/
 evaluation/adjudication.xlsx
 evaluation/side_by_side.md

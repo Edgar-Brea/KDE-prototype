@@ -2,10 +2,18 @@
 
   cd tool && PYTHONPATH=. python ../evaluation/score_coding.py [--config config.yaml]
 
-Needs the human-coded gold set (the coder's workbook and the test abstracts), available on request.
+Reads, all from this repository: the model's output on the test set (`model_run`), the test set (`assignments`:
+sample id, OpenAlex work id, period, and the SHA-256 of each abstract as it was coded), the human coding
+(`human_file`: one row per row of the coder's sheet, with its original row number; sample ids filled down, and
+`sample_id_filled` marking those that were) and the adjudication decisions.
 
-Settings are in the config's `evaluation` section: the model run, the sample set and its abstracts, the human
-coding workbook and its column names. No API calls.
+Abstract text is not in the repository (publisher rights). Each scored abstract is fetched by work id from the
+OpenAlex API and rebuilt from `abstract_inverted_index` as results/corpus_pull.py does; no key is needed for
+these lookups, but OPENALEX_API_KEY is used if set. Settings are under `abstracts` in the config's `evaluation`
+section. Two exceptions, for abstracts whose OpenAlex text changed after coding: CC BY abstracts are read from
+`stored` (with licence and DOI), and samples listed under `europepmc` are fetched from that Europe PMC record
+(markup removed, whitespace collapsed). Every abstract must match its hash; the script stops and lists any that
+do not. Verified abstracts are cached in `cache` (gitignored) and checked again on every run.
 
 Matching. Each human evidence span is located in its abstract: exact match first, then with whitespace and
 quotes normalised (nothing else). With `ellipsis_rule` on, an ellipsis at the start or end of a span is trimmed,
@@ -30,6 +38,7 @@ marked N are unpaired and group b candidates marked Y are paired. scores.md repo
 and classification, for the automatic and the adjudicated matching side by side.
 """
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -38,37 +47,70 @@ from collections import Counter
 
 import openpyxl
 import pandas as pd
+import requests
 
 from src.analysis.common import load_config
 from src.validate import TYPES, _QUOTES, find_spans, normalise
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "results"))
+from corpus_pull import BASE, get, rebuild_abstract  # noqa: E402
+
 LOW = ("medium", "low")
 ELLIPSIS = re.compile(r"\s*(?:\.{2,}|…)\s*")
+EUROPEPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 
 
 def bin_of(bins):
     return {p: b for b, periods in bins.items() for p in periods}
 
 
-def read_human(path, sheet, cols):
-    """Workbook rows -> list of dicts (row, sample_id, type, label-free fields). Fills down sample ids."""
-    ws = openpyxl.load_workbook(path, data_only=True, read_only=True)[sheet]
-    rows = ws.iter_rows(values_only=True)
-    header = [str(h).strip() if h is not None else "" for h in next(rows)]
-    at = {k: header.index(v) for k, v in cols.items()}
-    out, last = [], None
-    for n, r in enumerate(rows, start=2):
-        if not any(v is not None and str(v).strip() for v in r):
+def read_human(path):
+    """Released coding -> list of dicts (row, sample_id, filled_id, type, evidence, label)."""
+    df = pd.read_csv(path, dtype=str, keep_default_na=False)
+    return [{"row": int(r.row), "sample_id": r.sample_id, "filled_id": r.sample_id_filled == "Y",
+             "type": r.type.strip().lower(), "evidence": r.evidence, "label": r.label} for r in df.itertuples()]
+
+
+def europepmc_abstract(ref):
+    """Abstract of the Europe PMC record ref ("SRC:ID"), markup removed and whitespace collapsed. None if absent."""
+    src, rid = ref.split(":")
+    r = requests.get(EUROPEPMC, params={"query": f"EXT_ID:{rid} AND SRC:{src}", "resultType": "core",
+                                        "format": "json"}, timeout=60)
+    r.raise_for_status()
+    hits = r.json()["resultList"]["result"]
+    text = hits[0].get("abstractText", "") if hits else ""
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text)).strip() or None
+
+
+def load_abstracts(sample, acfg, exclude):
+    """sample_id -> abstract text exactly as coded, for every scored sample. Exits if any fails its hash."""
+    stored = pd.read_csv(acfg["stored"], dtype=str, keep_default_na=False).set_index("id")["abstract"]
+    europepmc = acfg.get("europepmc") or {}
+    os.makedirs(acfg["cache"], exist_ok=True)
+    texts, bad = {}, []
+    for sid, s in sample.iterrows():
+        if sid in exclude:
             continue
-        sid = r[at["sample_id"]]
-        filled = sid is None or not str(sid).strip()
-        sid = last if filled else str(sid).strip()
-        last = sid
-        out.append({"row": n, "sample_id": sid, "filled_id": filled,
-                    "type": str(r[at["type"]] or "").strip().lower(),
-                    "evidence": str(r[at["evidence"]] or ""),
-                    "label": str(r[at["label"]] or "") if "label" in at else ""})
-    return out
+        path = os.path.join(acfg["cache"], f"{sid}.txt")
+        cached = os.path.exists(path)
+        if s.doc_id in stored.index:
+            text, src = stored[s.doc_id], acfg["stored"]
+        elif cached:
+            text, src = open(path, encoding="utf-8", newline="").read(), path
+        elif sid in europepmc:
+            text, src = europepmc_abstract(europepmc[sid]), f"Europe PMC {europepmc[sid]}"
+        else:
+            w = get(f"{BASE}/{s.doc_id}", {"select": "id,abstract_inverted_index"})
+            text, src = rebuild_abstract(w.get("abstract_inverted_index")), f"OpenAlex {s.doc_id}"
+        if text is None or hashlib.sha256(text.encode("utf-8")).hexdigest() != s.abstract_sha256:
+            bad.append(f"{sid} ({src}: {'no abstract' if text is None else 'text differs from the coded abstract'})")
+            continue
+        if not cached and s.doc_id not in stored.index:
+            open(path, "w", encoding="utf-8", newline="").write(text)
+        texts[sid] = text
+    if bad:
+        sys.exit("Abstracts not matching their abstract_sha256:\n  " + "\n  ".join(bad))
+    return texts
 
 
 def locate_human(evidence, abstract):
@@ -423,19 +465,19 @@ def main():
 
     sample = pd.read_csv(ecfg["assignments"])
     sample = sample[sample.set == ecfg["sample_set"]].set_index("sample_id")
-    texts = pd.read_csv(ecfg["abstracts"]).set_index("sample_id")
+    exclude = ecfg.get("exclude_samples") or {}
+    texts = pd.DataFrame({"title": sample.title,
+                          "abstract": pd.Series(load_abstracts(sample, ecfg["abstracts"], exclude), dtype=object)})
     outputs = {}
     with open(os.path.join(ecfg["model_run"], "outputs.jsonl"), encoding="utf-8") as f:
         for line in f:
             o = json.loads(line)
             outputs[o["work_id"]] = o
     run_log = json.load(open(os.path.join(ecfg["model_run"], "run_log.json"), encoding="utf-8"))
-    cols = dict(ecfg["human_columns"])
-    rows = read_human(ecfg["human_file"], ecfg["human_sheet"], cols)
+    rows = read_human(ecfg["human_file"])
     bins = bin_of(ecfg["bins"])
 
-    scored, log = score(sample, texts, outputs, rows, bins, ecfg, ecfg.get("ellipsis_rule", False),
-                        ecfg.get("exclude_samples") or {})
+    scored, log = score(sample, texts, outputs, rows, bins, ecfg, ecfg.get("ellipsis_rule", False), exclude)
     stray = sorted({r["sample_id"] for r in rows} - set(sample.index), key=str)
     if stray:
         print(f"warning: coding rows for sample ids not in the sample set: {stray}")

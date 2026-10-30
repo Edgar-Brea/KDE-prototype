@@ -1,0 +1,538 @@
+row,sample_id,sample_id_filled,type,label,evidence,confidence
+2,T01,N,Phenomenon,Translational regulation in gene expression,Translational regulation plays the most critical role in gene expression,High
+3,T01,N,Phenomenon,Ribosomes protect mRNA fragments ,ribosome protected mRNA fragments ,High
+4,T01,N,Phenomenon,Gene expression in complex biological systems,"Ribo-seq with other omics data, such as RNA-seq, is essential to understand the gene expression in complex biological systems",High
+5,T01,N,Principle,Targeting ribosome-protected fragments by sequencing ,targets ribosome protected mRNA fragments to produce a 'global snapshot' of translatome,High
+6,T01,N,Means,Ribosome profiling by deep sequencing (Ribo-Seq),high throughput technology ...targets ribosome-protected mRNA fragments to produce a 'global snapshot' of the translatome,High
+7,T01,N,Means,Single-cell Ribo-seq ,"... in the past few years and other topics such as single-cell ribo-seq and crispr within two years, …",Low
+8,T01,N,Means,Ribo-seq data analysis applications,Ribo-seq data analysis applications were also explored…,
+9,T01,N,Means,Bibliographic review,"2744 published articles with 'Ribo-seq' between 2009 and Jan 2024, and 684 articles with Ribo-seq and RNA-seq terms.",
+10,T01,N,Means,Deep sequencing platform ,"It is a high throughput technology based on deep sequencing, ..",Medium
+11,T01,N,Purpose,undertand gene expression in complex biological systems,"areas of translation, transcriptome, and ribosome research …(with) the integration of Ribo-seq with other omics data to understand gene expression.",High
+12,T01,N,Purpose,guide researchers in choosing tools for analysis,providing a guide for researchers to choose corresponding tools for different types of analysis,
+13,T01,N,Purpose,study translation genome-wide and its regulation,produce a 'global snapshot' of translatome,High
+14,T02,N,Phenomenon,tuberculosis transmission ,To examine transmission of tuberculosis in Cuba ,High
+15,T02,N,Phenomenon,DR locus polymorphism groups strains,Forty-eight percent of the isolates were found in 19 clusters of strains with identical RFLP patterns.,High
+16,T02,N,Phenomenon,Clustering indicates recent transmission (inverse to age) ,"Considering the short study period, 48% clustering is high, indicating that recent transmission plays an important role in Cuba. ",Medium
+17,T02,N,Phenomenon,Antibiotic-resistant tuberculosis isolates found mostly in clusters,Most streptomycin-resistant isolates were found in clusters.,Medium
+18,T02,N,Principle,Recent transmission is indicated by identical typing patterns,...The high polymorphism observed ….for future molecular epidemiological studies,Medium
+19,T02,N,Principle, A marker that subdivides another’s clusters has greater discriminatory power,"Significantly different IS6110 RFLP types subdivided 11 spoligotype clusters, whereas none of the IS6110 clusters were subdivided by spoligotyping.",High
+20,T02,N,Means,RFLP typing,.. IS6110 restriction fragment length polymorphism (RFLP) typing …,High
+21,T02,N,Means,spoligotyping (direct repeat DR locus),.. and to evaluate the utility of spoligotyping..,High
+22,T02,N,Purpose,molecular epidemiological studies in Cuba,the high polymorphism observed with IS6110 RFLP indicates that this marker is useful for future molecular epidemiological studies in Cuba,High
+23,T02,N,Purpose,utility of two molecular methods,Spoligotyping appeared less suitable for population-based studies.,High
+24,T03,N,Phenomenon,Tuberculosis cases in Harare rising,,High
+25,T03,N,Phenomenon,DR region (spacers) polymorphism,"spoligotyping, a polymerase chain reaction",Medium
+26,T03,N,Phenomenon,DR locus amplification from degraded DNA,Analysis of the patients' original rural family homes revealed two geographically related spoligotype clusters. ,Medium
+27,T03,N,Phenomenon,Sharing a common DR locus from an ancestor linked to overcrowing ,"Patients infected with a shared spoligotype were not closely linked geographically ..., but were more likely to live in overcrowded conditions",Medium
+28,T03,N,Principle,Transmission conditions can be identified through shared genotypes and socio-geographical data,,
+29,T03,N,Principle,DNA fragment amplification without strain cultures,Spoligotyping … where tuberculosis culture is not available.,High
+30,T03,N,Means,spoligotyping (direct repeat DR locus),"spoligotyping, a polymerase chain reaction based technique",High
+31,T03,N,Means,PCR amplification ,Molecular fingerprinting of genomic DNA…by spoligotyping ,High
+32,T03,N,Means,sputum collection for DNA ,… genomic DNA recovered from sputum was performed by spoligotyping.,High
+33,T03,N,Purpose,spoligotyping on DNA from sputum possible without cultures ,Spoligotyping … where tuberculosis culture is not available.,High
+34,T03,N,Purpose,manage a tuberculosis epidemic without culture,...tuberculosis transmission in this epidemic has been hampered by the availability of suitable culture facilities,High
+35,T04,N,Phenomenon,CRISPR loci are tandem repeats,..(CRISPRs) constitute a particular family of tandem repeats.,High
+36,T04,N,Phenomenon,CRISPRs evenly distributed in prokaryotic genomes,Clustered regularly interspaced short palindromic repeats (CRISPRs)... found in a wide range of prokaryotic genomes,High
+37,T04,N,Phenomenon,Repeats are conserved within a locus across genomes  ,highly conserved regions (DR) varying in size from 23 to 47 bp,High
+38,T04,N,Phenomenon,Spacer uniqueness within a locus ,...by similarly sized unique sequences (spacer) of usually viral origin. ,High
+39,T04,N,Phenomenon,Leaders are AT-rich,..AT-rich sequence called the leader and assumed to be a transcriptional promoter,High
+40,T04,N,Principle,Periodic detection of repeats and spacers permits computational detection,...define DRs and extract spacers…,High
+41,T04,N,Principle,AT-rich leader detection sets locus boundaries ,...get the flanking sequences to determine the leader..,High
+42,T04,N,Principle,DRs conserve within loci but vary across taxa,…if the DR is found elsewhere in prokaryotic sequenced genomes.,High
+43,T04,N,Principle,Spacers as historical genomic uptake ,...tandem repeats found in a wide range of prokaryotic genomes … unique sequences (spacer) of usually viral origin. ,Medium
+44,T04,N,Means,"CRISPRFinder, a web service offering tools",a web service offering tools to (i) detect CRISPRs ,High
+45,T04,N,Means,Genbank database,(iv) blast spacers against Genbank database,High
+46,T04,N,Means,DR definition and spacer extraction with flanking sequence retrieval ,,High
+47,T04,N,Means,CRISPR detection including one- or two-motif loci,including the shortest ones (one or two motifs),High
+48,T04,N,Purpose,detection of the shortest CRISPRs ,,High
+49,T04,N,Purpose,blast spacers to reconstruct prokaryote/virus gene exchange ,.. flanking sequences to determine the leader ...blasting spacers. ,High
+50,T04,N,Purpose,CRISPR comparative studies across taxa ,...check if the DR is found elsewhere in prokaryotic sequenced genomes.,High
+51,T04,N,Purpose,test putative immune-system suggestion,..this structure represents a putative RNA-interference-based immune system.,High
+52,T05,N,Phenomenon,Bacterial complex strains contain multiple DVRs,"… complex strains is composed of multiple direct variant repeats (DVRs), each of which is composed of a 36-bp direct repeat (DR) plus a nonrepetitive spacer sequence of similar size.. ",High
+53,T05,N,Phenomenon, direct repeat (DR) length is 36-bp, a 36-bp direct repeat (DR),High
+54,T05,N,Phenomenon,tuberculosis molecular epidemiology,.. this polymorphism has been used in the epidemiology of tuberculosis..,High
+55,T05,N,Phenomenon,DR and spacer sets of similar size,a 36-bp direct repeat (DR) plus a nonrepetitive spacer sequence of similar size.,High
+56,T05,N,Phenomenon,DR polymorphism groups strains,.. polymorphism in the DR region by the variable presence of DVRs..,High
+57,T05,N,Phenomenon,Spacers have no detectable homology to anything known,No sequence homology was found between any of these spacers and M. tuberculosis DNA outside of the DR region or with any other known bacterial sequence. ,Medium
+58,T05,N,Phenomenon,DR deletion in contiguous blocks ,successive deletions of single discrete DVRs or of multiple contiguous DVRs from a primordial DR region,Medium
+59,T05,N,Phenomenon,DVR scrambling absent during evolution ,virtually no scrambling of DVRs took place during evolution,Medium
+60,T05,N,Phenomenon,novel spacer sequences bound to rare taxon,...novel spacer sequences identified in this study were confined to isolates of the rare Mycobacterium canettii taxon…,Medium
+61,T05,N,Principle,primordial reconstruction for evolutionary origin,from a primordial DR region containing many more DVRs than seen in present day isolates,High
+62,T05,N,Principle,Deletions inform about CRISPRs' evolution,… the result of successive deletions... ,Medium
+63,T05,N,Principle,Rare taxa contain higher diversity ,.. the use of the novel spacers in spoligotyping led only to a slight improvement of strain differentiation by spoligotyping.,Medium
+64,T05,N,Means,Flank DNA sequences and DNA sequencing of complete DR region  ,flanking DNA of M. tuberculosis complex strains,High
+65,T05,Y,Means,Samples from a rare taxon ,..isolates of the rare Mycobacterium canettii taxon,Medium
+66,T05,Y,Means,Comparison across strains (with databases),No sequence homology was found between any of these spacers… or with any other known bacterial sequence. / ...more DVRs than seen in present day isolates…,High
+67,T05,N,Purpose,to explain the evolution of polymorphic DR loci,to better understand the evolutionary scenario leading to polymorphic DR loci ,High
+68,T05,N,Purpose,improve spoligotyping strain discrimination,to improve strain differentiation by spoligotyping,High
+69,T05,N,Purpose,Potencial use of novel spacer to improve spoligotyping ,...the use of the novel spacers in spoligotyping led only to a slight improvement of strain differentiation by spoligotyping.,Medium
+70,T05,N,Purpose,Support molecular epidemiology of tuberculosis ,…this polymorphism has been used in the epidemiology of tuberculosis.,Medium
+71,T06,N,Phenomenon,drug-resistant tuberculosis,,High
+72,T06,N,Phenomenon,Stability of IS6110 fingerprint patterns and spoligotypes,Mycobacterium tuberculosis IS6110 fingerprint patterns and spoligotypes,High
+73,T06,N,Phenomenon,IS6110 pattern varies with time,A statistically significant correlation could be found between changes in insertion sequence (IS) patterns and the increased time intervals over which the isolates ,Medium
+74,T06,N,Phenomenon,drug resistance changes and IS changes are independent , IS patterns are not correlated to changes in the drug resistance of the isolates,Medium
+75,T06,N,Phenomenon,DR region change at a lower rate than IS6110,"Compared to IS6110, the direct repeat (DR) region, which is the basis for spoligotyping, has a lower rate of change",Medium
+76,T06,N,Principle,"IS6110 fingerprint patterns change over time, so measuring a time series of the same patients offers a measure of change ",The time spans between the first and the last or a changed isolate from one patient ranged from 1 to 772 days.,High
+77,T06,N,Principle,"A pattern must be stable to identify a strain, so its rate of change bounds the period during which the strain can be identified. ",IS6110 fingerprint patterns and spoligotypes has been assessed by analyzing serial isolates from patients with drug-resistant tuberculosis,High
+78,T06,N,Means, IS6110 restriction fragment length polymorphism,… isolates showed variations in their IS6110 restriction fragment length polymorphism patterns compared to the pattern of the first isolates,High
+79,T06,N,Means,Spoligotyping ,.. spoligotypes has been assessed ..,High
+80,T06,N,Means,"165 isolates, 56 patients, serial sampling over 1-772 days ",...165 M. tuberculosis isolates obtained from 56 patients have been analyzed.,High
+81,T06,N,Means,statistic correlations,.. statistically significant correlation..,High
+82,T06,N,Purpose,Analyse the relation between IS61110 and DRs change and drug resistance change,… (9%) were infected with isolates with changes in their IS6110 fingerprint patterns.,High
+83,T06,N,Purpose,Identify markers (tools) for molecular epidemiology ,… M. tuberculosis isolates have high degrees of stability.,High
+84,T07,N,Phenomenon,Strain families across populations ,"...The clustered spoligotypes included ones that matched spoligotypes of the T (37% of isolates), LAM (20%), Haarlem (8%) and Beijing (2%) families.",Medium
+85,T07,N,Phenomenon,Drug susceptibilities ,"… about 4% were multidrug resistant (i.e., resistant to at least isoniazid and rifampin)",Medium
+86,T07,N,Phenomenon,typing combination displaying higher genotype resolution ,"When IS6110 fingerprinting and spoligotyping information were combined for the 381 isolates tested, 273 isolates (72%) displayed unique genotypes",Medium
+87,T07,N,Principle,"Pattern sharing allows matching to place a population strain (eg., LAM, Haarlem) within a recognised and accepted worldwide strain structure ","The clustered spoligotypes included ones that matched spoligotypes of the T (37% of isolates), LAM (20%), Haarlem (8%) and Beijing (2%) families.",High
+88,T07,N,Principle,Combining fingerprinting and typing markers provides higher discriminations ,"When IS6110 fingerprinting and spoligotyping information were combined for the 381 isolates tested, 273 isolates (72%) displayed unique genotypes and 108 isolates (28%) displayed one of 34 genotypes (2-24 isolates per genotype)",Medium
+89,T07,N,Means,IS6110-DNA fingerprinting and spoligotyping,...typed by IS6110-DNA fingerprinting and spoligotyping,High
+90,T07,N,Means,"Culture of clinical isolates (381 patients), from six cities, in one-month collection periods  ",clinical isolates (381 patients) recovered in laboratories in six cities during one-month periods,High
+91,T07,N,Means,matching local strain population with a known strain population database  ,"...matched spoligotypes of the T (37% of isolates), LAM (20%), Haarlem (8%) and Beijing (2%) families.",High
+92,T07,N,Purpose,Survey the circulating strains of M. tuberculosis in Turkey,To survey the circulating strains of Mycobacterium tuberculosis in Turkey,High
+93,T07,N,Purpose,Determine strain dominance ,no single strain appearing to be dominant as has been observed in other areas of the world with high tuberculosis incidence.,Medium
+94,T07,N,Purpose,to evaluate drug susceptibilities and prevalence,Drug susceptibilities were also determined. ,High
+95,T08,N,Phenomenon,tuberculosis cases in Guinea-Bisseau,"..Mycobacterium tuberculosis complex from patients with pulmonary tuberculosis in Guinea-Bissau, which is located in West Africa",High
+96,T08,N,Phenomenon,phenotypic variation despite genetic identity ,"isolates of group B and, to a certain extent, also isolates of group C showed a high degree of variability in biochemical traits, despite genotypic identity in terms of IS6110 RFLP and spoligotype patterns. ",Medium
+97,T08,N,Phenomenon,tuberculosis evolutionary origin ,"…groups B and C have their evolutionary origin in West Africa, while group A isolates are of European descent.",High
+98,T08,Y,Phenomenon,spacer deletion in contiguous blocks defines groups,..a distinctive spoligotyping pattern that lacked spacers 33 to 36..,Medium
+99,T08,N,Principle,Missing spacers and IS6110 copy numbers represent group lineages as defined for deletions passed to descendants ,Group A … Group B … Group C ,Medium
+100,T08,N,Principle,Combining biochemical traits and genotypic traits discriminates traits useful for clonal grouping ,"Interestingly, isolates of group B and, to a certain extent, also isolates of group C showed a high degree of variability in biochemical traits, despite genotypic identity in terms of IS6110 RFLP and spoligotype patterns.",Medium
+101,T08,N,Means,biochemical typing and DNA fingerprinting,.. by biochemical typing and DNA fingerprinting,High
+102,T08,N,Means,Restriction fragment length polymorphism analysis with IS6110 (IS6110 RFLP analysis) ,"two genotyping methods, restriction fragment length polymorphism analysis with IS6110 (IS6110 RFLP analysis) ",High
+103,T08,N,Means,Spoligotyping,"Two genotyping methods,... spoligotyping",High
+104,T08,N,Means,human and bovine spoligotype patterns reported before (database),...characteristics of four strains conformed fully with the biochemical criteria for M. bovis … majority of classical human M. tuberculosis isolates,High
+105,T08,N,Purpose,Analysis of the clonal (evolutionary origin of Mycobacterium ,..were analyzed for clonal origin by..,High
+106,T08,N,Purpose,comparison between biochemical and molecular typing for traits outcomes,"..variability in biochemical traits, despite genotypic identity in terms of IS6110 RFLP and spoligotype patterns..",Medium
+107,T09,N,Phenomenon,tuberculosis transmission in aborigens in Western Canada,..recent TB transmission through an analysis of the clustering of TB cases,High
+108,T09,N,Phenomenon,TB cases clustering from recent transmission,... through an analysis of the clustering of TB cases,High
+109,T09,N,Principle,comparing clustering rates between vaccinated and unvaccinated individuals to determine whether vaccination prevents transmission,...designed to determine if BCG vaccination in Aboriginal people influenced recent TB transmission through an analysis of the clustering of TB cases,High
+110,T09,N,Principle,Controlling age and other factors to discriminate vaccine effects,"When age, sex, province, and HIV and reserve status were controlled for, BCG vaccination was not associated with clustering (OR 1.3, 95% CI 0.7 to 2.6)",Medium
+111,T09,N,Means,A retrospective analysis of tuberculosis cases of both vaccinated and unvaccinated individuals  ,A retrospective analysis of all culture-positive Mycobacterium tuberculosis cases,High
+112,T09,N,Means,FRFLP and spoligotyping ,...using standard methodology for restriction fragment length polymorphism and spoligotyping.,Medium
+113,T09,N,Purpose,Determine if BCG vaccination influenced recent TB transmission,determine if BCG vaccination in Aboriginal people influenced recent TB transmission,High
+114,T09,N,Purpose,Address a major health problem ,Tuberculosis (TB) remains a major health problem for Aboriginal people in Canada,High
+115,T10,N,Phenomenon,doxycycline-inducible transcriptional activation ,…two doxycycline (Dox)-inducible Cas9 platforms that efficiently enable conditional genome editing...via rtTA at the Rosa26 locus and TRE-Cas9 together with multiple sgRNAs at the Col1a1 locus,High
+116,T10,N,Phenomenon,inducible insertions and deletions (indels),...showed higher efficiency of inducible insertions and deletions (indels) with minimal leaky editing..,Medium
+117,T10,N,Phenomenon,leaky editing ,...with minimal leaky editing..,Medium
+118,T10,N,Phenomenon,specific locus expression ,via rtTA at the Rosa26 locus and TRE-Cas9 together with multiple sgRNAs at the Col1a1 locus,Medium
+119,T10,N,Principle,"TRE-Cas9 expresses only with doxycycline, making editing conditional in time.",TRE-Cas9,High
+120,T10,N,Principle,multiple sgRNAs (single guides) produce several edits at multiple loci at the same time ,...a site-specific multi-segment cloning strategy for rapid and easy integration of multiple single guide (sg)RNAs,High
+121,T10,N,Principle,"rtTA and TRE-Cas9 at defined loci optimise efficiency and inducibility, and minimises leakiness",...a platform containing rtTA at the Rosa26 locus and TRE-Cas9 together with multiple sgRNAs at the Col1a1 locus ...showed higher efficiency of inducible insertions and deletions (indels) with minimal leaky editing,High
+122,T10,N,Principle,Editing multiple tumour mutations models disease development in animals ,model Wilms' tumor and the progression of intestinal adenomas with multiple mutations including an activating mutation with a large genomic deletion,High
+123,T10,N,Means,two doxycycline (Dox)-inducible Cas9 platforms,..we devised two doxycycline (Dox)-inducible Cas9 platforms. ,High
+124,T10,N,Means,a site-specific multi-segment cloning strategy for  (sg)RNA integration,a site-specific multi-segment cloning strategy for rapid and easy integration of multiple single guide (sg)RNAs,High
+125,T10,N,Means,Cas9-transgenic mice; in vitro and in vivo models ,...Cas9 platforms that efficiently enable conditional genome editing at multiple loci in vitro and in vivo.,High
+126,T10,N,Purpose,provide a proven platform for in vivo Cas9 uses ,the established platform should make complicated disease modeling in the mouse easily attainable,High
+127,T10,N,Purpose,Enable conditional genome editing at multiple loci,enable conditional genome editing at multiple loci in vitro and in vivo.,High
+128,T10,N,Purpose,Make complicated disease modeling in the mouse easily attainable for cancer research,the established platform should make complicated disease modeling in the mouse easily attainable,High
+129,T11,N,Phenomenon,Genome cooperation across Europe,cooperation in the European Community (EC),Low
+130,T11,N,Principle,LAB strains can be engineered to meet defined industrial requirements under EC gene expression regulations ,development of stable controlled gene expression for a range of LAB and production of strains meeting specific requirements of the food and feed industries,Low
+131,T11,N,Means,BRIDGE programme T-project structure; 34 laboratories in CORE and LEAVES sub-groups,In BRIDGE (1990-1993) …‚CORE is focused upon the development of stable controlled,Low
+132,T11,N,Purpose,Develop secretion systems,stable controlled gene expression and secretion systems,Low
+133,T11,N,Purpose,Develop stable controlled gene expression for a range of LAB ,...stable controlled gene expression and secretion systems for a range of LAB.,Low
+134,T11,N,Purpose,Produce LAB strains for food and feed industries,..production of strains meeting specific requirements of the food and feed industries,Low
+135,T12,N,Phenomenon,tuberculosis multidrug-resistant strain transmission,Transmission of multidrug-resistant strains of Mycobacterium tuberculosis (MDR-TB),High
+136,T12,N,Phenomenon,tuberculosis and HIV co-infection,...particularly in the context of co-infection with the human immunodeficiency virus (HIV).,High
+137,T12,N,Phenomenon,strain-specific polymorphisms (the direct repeat (DR) region),strain-specific polymorphisms (the direct repeat (DR) region),High
+138,T12,N,Phenomenon,rifampicin resistance from rpoB loci ,genetic loci associated with rifampicin resistance (rpoB),High
+139,T12,N,Phenomenon,Spacer presence or absence variation within the DR region,"Strain variation was determined using the spoligotyping method, based on the presence or absence of variable linker sequences within the DR region.",High
+140,T12,N,Principle,"Strain-specific DR variation allows typing direct from clinical samples, matching a patient’s strain to a known case",strain-specific polymorphisms (the direct repeat (DR) region).,High
+141,T12,N,Principle,Rifampicin resistance localised to rpoB allows genotypic detection without culture,Drug resistance was determined using a commercially available kit for detection of point mutations in the rpoB gene. ,High
+142,T12,N,Means,Polymerase chain reaction (PCR),Polymerase chain reaction (PCR) was used directly on clinical samples …,High
+143,T12,N,Means,Inno-Lipa RifTB commercial kit for rpoB point mutation detection,"commercially available kit for detection of point mutations in the rpoB gene (Inno-Lipa RifTB; Innogenetics, Belgium)",High
+144,T12,N,Means,confirmation by nucleotide sequencing,confirmed by nucleotide sequencing,High
+145,T12,N,Means,spoligotyping,Strain variation was determined using the spoligotyping method,High
+146,T12,N,Means,saliva samples from two patients with tuberculosos and HIV ,Sputum and bronchoalveolar lavage samples were obtained from two HIV-positive patients with suspected tuberculosis,High
+147,T12,N,Purpose,Rapid assessment of individuals infected with MDR-TB,...allow rapid assessment of samples from patients potentially infected with MDR-TB,High
+148,T12,N,Purpose,Prevent and control nosocomial spread ,...for rapid monitoring of potential nosocomial spread of MDR-TB.,High
+149,T13,N,Phenomenon,"repeated sequences influence genome structure, function, dynamics and evolution","..the major role played by repeated sequences in the structure, function, dynamics and evolution of genomes",High
+150,T13,N,Phenomenon,Horizontal transfer between Archaea and Viruses,the detection of horizontal transfer between Archaea and Viruses,High
+151,T13,N,Principle,"Indexed repeat positions and properties, projected onto sequences and queried, allow allow inspection of repeat organisation and search by repeat characteristic","The application projects data from a repeat index file on the analysed sequences, and by combining this principle with a query system",High
+152,T13,N,Principle,Matching CRISPR spacers across Archaea and Virus genomes shows horizontal transfer ,...an analysis of CRISPR structures in Archaea genomes and the detection of horizontal transfer between Archaea and Viruses,High
+153,T13,N,Means,Pygram visualization application,"Pygram, a new visualization application for investigating the organization of repeated sequences in complete genome sequences",High
+154,T13,N,Means,data bank of repeated sequences in complete genome sequences,the organization of repeated sequences in complete genome sequences. ,High
+155,T13,N,Means,repeat index file ,...data from a repeat index file on the analysed sequences…,High
+156,T13,N,Purpose,to increase the efficiency of laboratories working on repeat organisation,to increase the efficiency of laboratories involved in investigating repeat organization in single genomes or across several genomes,High
+157,T13,N,Purpose,provide an efficient graphical browser for repeat study,"an efficient, graphical browser for studying repeats",High
+158,T14,N,Unsure,Dropped. It is not an abstract ,,Low
+159,T15,N,Phenomenon,X-linked PIG-A gene  loss-of-function mutations disrupts GPI anchor biosynthesis ,"acquired somatic loss-of-function mutations in the X-linked PIG-A gene in HSPC, with resultant disruption of the first step of the biosynthesis of GPI anchors ",High
+160,T15,N,Phenomenon,clonal dominance of PIG-A mutant HSPC,clonal dominance of PIG-A mutant HSPC,High
+161,T15,N,Phenomenon,Complement-mediated lysis from loss of GPI-linked proteins,loss of cell-surface expression of GPI-linked proteins such as CD55 or CD59. PNH red cells are sensitive to complement-mediated lysis due to loss of these GPI-linked proteins.,Medium
+162,T15,N,Principle,Using sequence homology from monkeys and humans lets one guide to target same PIG-A gene     ,"We constructed a lentiviral vector expressing GFP, Cas9, and one of a series of five guide RNAs manually designed to target the rhesus macaque PIG-A gene at several sites within exon 2, where most human missense mutations are clustered. ",High
+163,T15,N,Principle,Sequence-matched guides direct Cas9 to disrupt a chosen gene by non-homologous end joining repair,to disrupt the PIG-A gene via non-homologous end joining DNA repair ,High
+164,T15,N,Principle,Loss of a surface protein informs gene disruption at the phenotypic level ,loss of cell-surface expression of GPI-linked proteins such as CD55 or CD59,High
+165,T15,N,Principle,Choosing a species genetically closer to humans returns disease sympthoms better than murine models  ,"Murine models for PNH generated via conditional knockout of PigA do not recapitulate the hemolysis, thrombotic phenotype, or clonal dominance. ",High
+166,T15,N,Means,"Lentiviral vector expressing GFP, Cas9 and one of five gRNAs","lentiviral vector expressing GFP, Cas9, and one of a series of five guide RNAs",High
+167,T15,N,Means,Five guide target PIG-A exon 2,five guide RNAs ...target the rhesus macaque PIG-A gene at several sites within exon 2,High
+168,T15,N,Means,SURVEYOR assay for locus disruption ,using the SURVEYOR assay for locus disruption ,High
+169,T15,N,Means,Direct sequencing,"and direct sequencing, ",High
+170,T15,N,Means,Flow cytometry for CD55 or CD59 (GPI-linked proteins) ,and at the phenotypic level by flow cytometry for GPI-linked proteins. ,High
+171,T15,N,Means,Human K562 and rhesus FRhK-4 cell lines ,We used human K562 or rhesus macaque FRhK-4 cell lines for proof of concept in vitro studies. ,High
+172,T15,N,Purpose, a relevant animal model for PNH,generate a relevant animal model for PNH,High
+173,T15,N,Purpose,Validate guide efficiency and specificity before cell studies,"validated the lentiCRISPR-/Cas9 approach for use in rhesus cells for PIG-A knockout in vitro, and the guide-RNAs have shown effectiveness and specificity. ",High
+174,T15,N,Purpose, Investigate the mechanisms of clonal dominance and thrombosis,allowing investigation of the mechanisms of clonal dominance and thrombosis. ,High
+175,T16,N,Phenomenon,Group II intron targeted to a chosen genomic site ,"lactococcal group II intron, Ll.ltrB, was targeted to insert efficiently into genes ",High
+176,T16,N,Phenomenon,Intron splicing depends on intron-encoded protein ,Since splicing of the Ll.ltrB intron depends on the intron-encoded protein,High
+177,T16,N,Phenomenon,Inserted unspliced introns disrupt host gene function ,an intron lacking the intron open reading frame disrupted TetM and MleS function,Medium
+178,T16,N,Phenomenon,Splicing restoration thorugh intron-encoded protein in trans,MleS activity could be partially restored by expressing the intron-encoded protein in trans.,Medium
+179,T16,N,Principle,Introns encoding specific traits insert those traits into a chosen genomic site," group II intron, Ll.ltrB, was targeted to insert efficiently into genes encoding malate decarboxylase (mleS) and tetracycline resistance (tetM) within the Lactococcus lactis genome",High
+180,T16,N,Principle,"intron-encoded proteins drive splicing, disrupting insertion conditional on the presence of that protein ","epends on the intron-encoded protein, targeted invasion with an intron lacking the intron open reading frame disrupted TetM and MleS function",High
+181,T16,N,Means,modified Ll.ltrB lactococcal group II intron,,High
+182,T16,N,Means,Intron-encoded protein expressed in trans, activity could be partially restored by expressing the intron-encoded protein in trans.,High
+183,T16,N,Means,Intron variants lacking the intron open reading frame,targeted invasion with an intron lacking the intron open reading frame ,High
+184,T16,N,Means,"introns with abiD phage resistance, tetM marker",deliver a phage resistance gene (abiD) and a tetracycline resistance marker (tetM) into mleS,High
+185,T16,N,Purpose,Provide facile genomic manipulation methods for lactic acid bacteria, few facile methods for genomic manipulation of the lactic acid bacteria,High
+186,T16,N,Purpose,"Deliver industrially important traits, food-grade, into lactococcal genomes",as a potential food-grade mechanism for delivery of industrially important traits into the genomes of lactococci.,High
+187,T17,N,Phenomenon,lactic acid bacteria genetic variation,these strains were essentially different in the number and size of the plasmids and the chromosomal DNA restriction fragments,High
+188,T17,N,Phenomenon,acid tolerance stable over descendants ,Acid tolerance is inherited in a stable manner and retained by the segregants of TV2 strain obtained in the course of long-term storage of the bacteria. ,High
+189,T17,N,Phenomenon,species identity but intraspecific divergence ,species Lactococcus lactis according to their G+C composition (36.7-36.5 mol %) and the high level of DNA-DNA hybridization (93%),High
+190,T17,N,Principle,using G+C composition and DNA-DNA hybridization for strain identification ,these strains were essentially different in the number and size of the plasmids and the chromosomal DNA restriction fragments,High
+191,T17,N,Principle,using plasmids and restriction fragment characteristics to distinguish strains within a species ,different in the number and size of the plasmids and the chromosomal DNA restriction fragments,High
+192,T17,N,Means,G+C composition determination, G+C composition,High
+193,T17,N,Means,DNA-DNA hybridisation,DNA-DNA hybridization,High
+194,T17,N,Means,Plasmid number and size,number and size of the plasmids ,High
+195,T17,N,Means,Chromosomal DNA restriction fragment analysis, the chromosomal DNA restriction fragments,High
+196,T17,N,Purpose,Characterise acid tolerance,Characterise acid tolerance as a property determining growth and viability at low pH,High
+197,T17,N,Purpose,Inherited acid tolerance,Establish whether acid tolerance is stably inherited,High
+198,T18,N,Phenomenon,PUM binding to a conserved 3′-UTR motif regulating gene expression,Pumilio (PUM) RNA binding proteins …regulating gene expression by binding to a conserved motif in the 3‚-untranslated region (3‚-UTR),High
+199,T18,N,Phenomenon,Genetic redundancy masking phenotype in single mutants,single apum mutants exhibit no visible phenotypes...apum1/2/3 display reduced growth ...hypersensitivity to various stresses,Medium
+200,T18,N,Principle,Cas9 editing produces mutants that expose masked function,CRISPR/Cas9-generated mutants,High
+201,T18,N,Principle,Motif substitutions identify positions required for binding,recombinant APUM homologous domains bind to the 5‚-UG U GUAUA-3‚ core motif in the 3‚-UTR of the transcription factor ,High
+202,T18,N,Principle,Overlap between predicted targets and upregulated DEGs supports direct regulation,...with 1609 present among the upregulated DEGs in apum1/2/3,High
+203,T18,N,Means,	CRISPR/Cas9 to generate apum1/2/3 and apum1/2/3/4 mutants,CRISPR/Cas9-generated apum1 apum2 apum3 triple mutants ,High
+204,T18,N,Means,"Recombinant APUM homologous domains, biochemical binding assays",Biochemical assays showed that recombinant APUM homologous domains bind,High
+205,T18,N,Means,Motif variants with single and multiple nucleotide substitutions,"..otably, single nucleotide substitutions, except for the third U, do not affect binding, while multiple mutations disrupt interaction",High
+206,T18,N,Means,"Transcriptomic profiling, DEG analysis	",Transcriptomic profiling revealed ,High
+207,T18,N,Purpose,Determine the role of group I PUMs in plants,we investigated the functions of Arabidopsis group I PUMs (APUM1-APUM6),High
+208,T18,N,Purpose,Identify APUM target genes and pathways,role of PUM in plants is largely unexplored,High
+209,T18,N,Purpose,Establish the basis of growth–stress trade-offs,providing a new perspective on the trade-offs between growth and stress resilience in plants,High
+210,T19,N,Phenomenon,distinct replication regions in phage genomes,..distinct DNA region dedicated to replication,High
+211,T19,N,Phenomenon,phage grouping by replication type ,"..phages infecting ... divided into at least two groups, , each containing the presumptive replication functions",High
+212,T19,N,Principle,Southern blotting to replication regions groups phages,...Southern blotting experiments showed that phages infecting,High
+213,T19,N,Principle,replication sequences from phages provide resistance to host ,..Specific regions from the putative replication module of each of the two phages were examined for their ability to provide phage resistance.,High
+214,T19,N,Means,Southern blotting,,High
+215,T19,N,Means,Sequence data from phages phiO1205 and phi7201,Sequence data derived from the Streptococcus thermophilus phages phiO1205 and phi7201,High
+216,T19,N,Purpose,Classify phages infecting S. thermophilus,...may be divided into at least two groups,High
+217,T19,N,Purpose,Identification of four loci ,… Identification of four loci isolated from twoStreptococcus,High
+218,T20,N,Phenomenon,bovine tuberculosis in Castlepoint area of the Wairarapa,...isolates of Mycobacterium bovis from the Castlepoint area of the Wairarapa,High
+219,T20,N,Phenomenon,polymorphic GC-rich repetitive sequence (PGRS) variation among strains ,polymorphic GC-rich repetitive sequence (PGRS),High
+220,T20,N,Principle,A method resolving more types is more useful for strain discrimination for detailed molecular epidemiology,...Spoligotyping was less discriminatory than PGRS typing but both methods could be used to group isolates with different restriction types.,High
+221,T20,N,Means,restriction endonuclease analysis,...were characterised by restriction endonuclease analysis..,High
+222,T20,N,Means,polymorphic GC-rich repetitive sequence (PGRS),two newer DNA typing methods based on polymorphic GC-rich repetitive sequence (PGRS),High
+223,T20,N,Means,spoligotyping,two newer DNA typing methods based on ... spoligotyping,High
+224,T20,N,Purpose,Support epidemiological studies of bovine tuberculosis in the Castlepoint area ,...isolates of Mycobacterium bovis from the Castlepoint area ,High
+225,T20,N,Purpose,Compare three molecular typing methods,,High
+226,T21,N,Phenomenon,mobile genetic elements (MGEs) drives diversification,"their mobile genetic elements (MGEs), including viruses and plasmids, are critical drivers of microbiome structures and processes",High
+227,T21,N,Phenomenon,Spacer acquisition from phages and plasmids as anti-phage defense,CRISPR as anti-phage defense,High
+228,T21,N,Phenomenon,Positive selection on spacers conferring phage protection,over-representation of prevalent and conserved spacers consistent with a positive selection pressure associated with phage targeting,High
+229,T21,N,Phenomenon,phage enters non-host cells ,phage genomes may frequently enter non-host microbial cells,High
+230,T21,N,Principle,Matching sequences of spacer and MGE sequence unveils which elements a microbe has ,... identified 1.18 billion hits between 41 million spacers,High
+231,T21,N,Principle,Spacer prevalence and conservation indicate selection on targeting,prevalent and conserved spacers consistent with a positive selection pressure associated with phage targeting,High
+232,T21,N,Principle,Targeting by non-viable hosts leads to identify phage entry without infection,...sustained CRISPR targeting by microbes not expected to be viable hosts,High
+233,T21,N,Means,optimized computational data search of short-read data , an optimized computational approach to search short-read data ,High
+234,T21,N,Means,"CRISPR spacer dataset of 800 million CRISPR spacers across 450,000 public metagenome",this extensive CRISPR spacer dataset,High
+235,T21,N,Purpose,"Establish global CRISPR loci diversity, activity and roles across biomes","understanding of CRISPR loci diversity, activity, and roles across Earth‚Äôs biomes ",High
+236,T21,N,Purpose,characterise CRISPR targeting patterns,highlight key parameters driving CRISPR targeting patterns,High
+237,T21,N,Purpose,understand strain-level diversification and selection processes within microbial populations,… strain-level diversification and selection processes within microbial populations,High
+238,T22,N,Phenomenon,eukaryal character of archaeal decoding systems,"essential components required for DNA replication, DNA repair and recombination, the cell cycle, transcriptional initiation and translation, ...eukaryal character with many archaeal-specific features",High
+239,T22,N,Phenomenon,genome plasticity from mobile genetic elements,"200 diverse IS, putative nonautonomous mobiles, integrase-mediated insertion",High
+240,T22,N,Phenomenon,Crenarchaea and euryarchaea divergence in replication and translation,"...differences between crenarchaea and euryarchaea, especially for their DNA replication mechanism and cell cycle processes and their translational apparatus.",Medium
+241,T22,N,Principle,Searching for homology across sequenced genomes assigns proteins to shared classes or specific lineages,"One-third of the encoded proteins have no detectable homologs in other sequenced genomes. Moreover, 40% appear to be archaeal-specific, and only 12% and 2.3% are shared exclusively with bacteria and eukarya, respectively.",High
+242,T22,N,Means,complete genome sequence ,"...contains 2,992,245 bp on a single chromosome and encodes 2,977 proteins …",High
+243,T22,N,Means,Homology comparison against other sequenced genomes,One-third of the encoded proteins have no detectable homologs in other sequenced genomes. ,High
+244,T22,N,Purpose,Describe the complete genome of S. solfataricus P2,The genome of the crenarchaeon Sulfolobus solfataricus P2 ,High
+245,T22,N,Purpose,Establish differences between crenarchaea and euryarchaea,"...illustrate major differences between crenarchaea and euryarchaea,",High
+246,T22,N,Purpose,Determine which functions and pathways are encoded ,"Different transfer systems are used for ...and a wealth of ...are encoded, as well as enzymes of the central metabolic pathways and motility proteins. ",High
+247,T23,N,Phenomenon,transgenesis through CRISPR/Cas-9 technology ,CRISPR/Cas-9 technology for transgenesis,High
+248,T23,N,Phenomenon,Targeted double-strand breaks yielding homozygous change in one step,..targeted DNA double strand breaks and can result in homozygous changes in a single step..,High
+249,T23,N,Principle,targeted breaks and homozygosity in a single step renders a more accurate and faster transgenesis,"targeted DNA double strand breaks and can result in homozygous changes in a single step, it is more accurate and more efficient than other production methods and speeds up transgenesis.",High
+250,T23,N,Principle,Direct editing of non-human embryos ,"..obviates the use of embryonic stem cells, and is being used to generate transgenic non-human primates (NHPs)",High
+251,T23,N,Means,Comparison between biochemical and molecular typing ,"have been assessed with respect to other production methods, laboratory animal welfare, and the scientific relevance of transgenic models of human diseases in general",High
+252,T23,N,Means, CRISPR/Cas-9,recently developed CRISPR/Cas-9 technology,High
+253,T23,N,Purpose,Assess the scientific basis and advantages of Cas9 transgenesis,,High
+254,T23,N,Purpose,Prompt reappraisal of the rationale for genetically-altered animals in research and industry,reappraisal of the rationale for using genetically-altered animals in fundamental research and by the pharmaceutical industry,High
+255,T24,N,Phenomenon,tuberculosis transmission ,"… prevent further, transmission of Mycobacterium tuberculosis",High
+256,T24,N,Phenomenon,Matching fingerprints indicates a common source,...Seven cases had isolates with matching six-band IS6110 DNA fingerprints,High
+257,T24,N,Phenomenon,Fingerprint variation within a transmission event,..closely related fingerprint pattern and this case was considered to be caused by a variant of the same strain,High
+258,T24,N,Principle,"Matching IS6110 patterns and spoligotypes, with epidemiologic evidence, confirm cases as related",,High
+259,T24,N,Principle,"A closely related pattern indicates a strain variant, not a different strain",..the isolate from another case had a closely related fingerprint pattern and this case was considered to be caused by a variant of the same strain,High
+260,T24,N,Means,,,High
+261,T24,N,Means,IS6110 DNA fingerprinting ,IS6110 DNA fingerprints,High
+262,T24,Y,Means,spoligotyping ,spoligotyping and epidemiologic evidence,High
+263,T24,N,Means,epidemiologic evidence,"A contact investigation ...among 257 shelter users and staff, 70% a positive tuberculin skin test, including 21 with documented skin test conversions",High
+264,T24,N,Purpose,Determine the extent of transmission and prevent transmission,"to determine extent of, and prevent further, transmission of Mycobacterium tuberculosis",High
+265,T24,N,Purpose,Confirm an outbreak in a high-risk setting,...ten tuberculosis (TB) cases were reported among men in a Syracuse New York homeless shelter for men,High
+266,T24,N,Purpose,set a precedent for routine screening ,routine screening for TB and preventive therapy for eligible persons should be considered in shelters.,High
+267,T25,N,Phenomenon,Phage infection disrupts dairy fermentation,Phage infection must not be allowed to interfere with this,Low
+268,T25,N,Principle,Molecular genetic knowledge of LAB enables directed strain improvement,molecular genetics of different lactic acid bacteria has been feasible for little more than a decade,Low
+269,T25,N,Means,Established bacteriological techniques,...the application of established bacteriological techniques with particular care being devoted to strain characterisation,Low
+270,T25,N,Purpose,Call for attention to use biotech to develop new strains ,..with the aid of biotechnology it should be possible to identify and/or construct starter strains,Low
+271,T26,N,Phenomenon,point mutations for agronomic trait improvements,Point mutations or single nucleotide polymorphisms often determine important agronomic traits of crops,High
+272,T26,N,Phenomenon,deaminase-based base conversion ,irreversible conversion of one target base into another,Medium
+273,T26,N,Principle,Catalytically inactive Cas9 fused to a deaminase enables programmable base conversion without cutting,fusion of catalytically inactive CRISPR-Cas9 domain (Cas9 variants) and cytosine or adenosine deaminase domain …  enabling precise editing of genomes,High
+274,T26,N,Principle,single base changes generate improved traits in crops,Point mutations or single nucleotide polymorphisms often determine important agronomic traits of crops,High
+275,T26,N,Means,genome base editors,...A base editor is a fusion ,High
+276,T26,N,Purpose,"Review platform development, advances, applications and limitations",summarized the development of different base-editing platforms,High
+277,T26,N,Purpose,Improve crop to meet future demands,... developing improved crop varieties to meet future demands,High
+278,T27,N,Phenomenon,c-myc 5'-flanking sequence binds to proteins in red blood cells ,chicken c-myc 5'-flanking sequence has previously been shown to bind multiple proteins present in undifferentiated and differentiated red blood cells,High
+279,T27,N,Phenomenon,Sequence-specific protein binds to three regularly spaced CCCTC repeats,a protein binds to three regularly spaced repeats of the core sequence CCCTC,High
+280,T27,N,Phenomenon,binding requires sequences beyond the recognition motifs,This CCCTC-binding factor was termed CTCF. It requires additional sequences outside the three recognition motifs for tight binding.,High
+281,T27,N,Phenomenon,Transcriptional increase by 5′-flanking region factors removal  ,Removal of 110 bp sequence binding both CTCF and Sp1-like proteins leads to a 4 to 8-fold increase in transcription,Medium
+282,T27,N,Principle,"Footprinting, interference methods and missing point techniques localise protein-DNA binding sites","...techniques, two proteins were found to bind to overlapping sequences within 180-230 bp upstream of the start of transcription.",High
+283,T27,N,Principle,Sequence-specific DNA chromatography purifies a factor by its binding site,CTCF was purified to near homogeneity by sequence-specific DNA chromatography.,High
+284,T27,N,Means,agarose gel retardation assay & O-phenanthroline-copper footprinting in situ,a modified agarose gel retardation assay with O-phenanthroline-copper footprinting in situ,High
+285,T27,N,Means,Missing contact point and methylation interference,missing contact point and methylation interference techniques,High
+286,T27,N,Means,Sequence-specific DNA chromatography,...near homogeneity by sequence-specific DNA chromatography.,High
+287,T27,N,Means,chicken c-myc 5'-flanking sequence,chicken c-myc 5'-flanking sequence,High
+288,T27,N,Purpose,Characterise proteins binding a specific 5′-flanking region,the protein binding to one specific region within a hypersensitive site approximately 200 base pairs upstream of the start of transcription,High
+289,T27,N,Purpose,Determine the factor’s role in c-myc transcriptional regulation,CTCF is likely to be one of multiple nuclear factors involved in the transcriptional regulation of the chicken c-myc gene.,High
+290,T28,N,Phenomenon,pyrazinamide (PZA) resistance as a trait of M. bovis,pyrazinamide (PZA) resistance,High
+291,T28,N,Principle,A species-associated resistance phenotype screens isolates for confirmatory identification,The sensitivity for detection of M. bovis is lowered to 82% when only PZA-monoresistant isolates are screened.,High
+292,T28,N,Principle,,,High
+293,T28,N,Means,a confirmatory test ,"spoligotyping, biochemical testing, or genomic deletion analysis",High
+294,T28,N,Means,PZA-resistance test ,PZA-monoresistant are screened ,High
+295,T28,N,Purpose,Identify M. bovis among M. tuberculosis complex isolates,best identified by screening those isolates of the Mycobacterium tuberculosis complex,High
+296,T28,N,Purpose,evaluate the accuracy of PZA resistance in detecting M. bovis,Does Resistance to Pyrazinamide Accurately Indicate the Presence of Mycobacterium bovis ?,High
+297,T29,N,Phenomenon,Resistance mechanisms ,"Mechanisms such as adsorption inhibition, restriction and modification, and abortive infection",High
+298,T29,N,Phenomenon, bacteriophage and bacteriophage resistance in LAB, bacteriophage and bacteriophage resistance in the lactic acid bacteria,High
+299,T29,N,Phenomenon,bacteriophage counter-resistance,bacteriophage resistance and counter-resistance,High
+300,T29,N,Principle,Molecular analysis of phenotypically described mechanisms reveals resistance nature and variety,"..phenotypically over the past decade, are now being subjected to molecular analysis",High
+301,T29,N,Principle,Phage genome sequences can be used to construct novel resistances,..construct novel phage resistance based on the phage genome itself,High
+302,T29,N,Means,Molecular analysis of phage and resistance systems,molecular analysis ….understanding of the nature and variety of LAB resistance systems to phage attack ,High
+303,T29,N,Means,Phage genome sequence,analysis of different bacteriophages,High
+304,T29,N,Purpose,Understand resistance systems used by LAB against phage,understanding of the nature and variety of resistance systems employed by lactic acid bacteria to combat phage attack,High
+305,T29,N,Purpose,Review progress in phage and resistance analysis,review outlines the recent progress in the molecular analysis …,High
+306,T30,N,Phenomenon,DMP1 deletion cause defective bone mineralisation ,we deleted the DMP1 gene in rabbit using CRISPR/Cas9,High
+307,T30,N,Phenomenon, DMP1 mutations cause a rare ARHR, a rare autosomal recessive form of hypophosphatemic rickets (ARHR) caused by DMP1 mutations,High
+308,T30,N,Phenomenon,DMP1 KO dead in rabbits ,DMP1 KO rabbits died by postnatal week 8,High
+309,T30,N,Principle,Deleting a gene in a species with the relevant anatomy produces a model recapitulating human disease features,...deleted the DMP1 gene in rabbit using CRISPR/Cas9. This rabbit model recapitulated many features of human ARHR,High
+310,T30,N,Means,CRISPR/Cas9 to delete DMP1 in rabbit,,High
+311,T30,N,Means,Bone histology ,"...osteoid, osteon canal areas, costochondral junctions",High
+312,T30,N,Means,Dmp1 KO mouse as comparison,...Studies of Dmp1 knockout (KO) mice led to the discovery ,High
+313,T30,N,Purpose,Better understand ARHR , a rare autosomal recessive form of hypophosphatemic rickets (ARHR) caused by DMP1 mutations,High
+314,T30,N,Purpose,Overcome limitations of the mouse model ,"However, there are limitations for using this mouse model to study ARHR",High
+315,T31,N,Phenomenon,Genetic convergence producing identical patterns by independent routes, Genetic convergence,High
+316,T31,N,Phenomenon,Unique Events Polymorphism (UEP) increases data on spoligotype diversity ,"produces highly diverse portable numerical results, ... combination of (1) Unique Events Polymorphism (UEP) ",High
+317,T31,N,Phenomenon,Insertion-Sequence-mediated genetic recombination increases data on spoligotype diversity ,"produces highly diverse portable numerical results..., combination of  Insertion-Sequence-mediated genetic recombination.",High
+318,T31,N,Phenomenon,geographical structures of MTC bacilli populations,geographical structures of MTC bacilli populations,High
+319,T31,Y,Principle,Spoligotype patterns shared across isolates define shared-types and group into clades,"..technique that assays the genetic diversity of this locus and is useful both for clinical laboratory, molecular epidemiology, evolutionary and population genetics.",High
+320,T31,N,Principle,Pattern-based classification recovers infra-species phylogeny, current MTC genomes diversity as well as on the relationships between the genetic attributes investigated (spoligotypes) and the infra-species classification and evolutionary history of the species,High
+321,T31,N,Principle,validation when unsupervised and supervised modelling converges ,"an independent Na√Øve-Bayes mixture-model analysis has validated main of the previous supervised SpolDB3 classification results, confirming the usefulness of both supervised and unsupervised models",High
+322,T31,N,Means,Spoligotyping; PCR-based reverse-hybridization blotting,Spoligotyping is the widely used PCR-based reverse-hybridization blotting technique,High
+323,T31,N,Means,SpolDB4 database,"The fourth international spoligotyping database, SpolDB4,",High
+324,T31,N,Means,Mixed expert-based and bioinformatical classification	,a mixed expert-based and bioinformatical approach,High
+325,T31,N,Means,Naïve-Bayes mixture-model analysis,,High
+326,T31,N,Purpose,Update SpolDB3 to a more representative international spoligotyping database	," a new, more representative and extended, international spoligotyping database. ",High
+327,T31,N,Purpose,Provide a conceptual framework of the global TB Epidemiologic Network,providing a large-scale conceptual framework of the global TB Epidemiologic Network,High
+328,T31,N,Purpose,Increase knowledge of the global phylogeography of the MTC complex,Our results broaden the knowledge of the global phylogeography of the MTC complex,High
+329,T32,N,Phenomenon,"CRL4-CDT2 prevents rereplication by degrading CDT1, SET8 and p21 in S-phase","CRL4-CDT2 prevents re-initiation of DNA replication during the same cell cycle ""rereplication"" through targeted degradation of CDT1, SET8 and p21 during S-phase of the cell cycle",Medium
+330,T32,N,Phenomenon,induced rereplication and senescence ,induction of SET8- and p21-dependent DNA rereplication and senescence,Medium
+331,T32,N,Phenomenon,cell proliferation regulation ,emerging as a master regulator of cell proliferation,High
+332,T32,N,Phenomenon,CDT2 ablation relates to poor survival in melanoma,CDT2 ablation inhibited a panel of melanoma cell lines ,Medium
+333,T32,N,Phenomenon,Cullin E3 ligases' activity inhibition,"inhibits the activity of cullin E3 ligases, thereby stabilizing a vast number of cullin",High
+334,T32,N,Principle,"Blocking degradation stabilises the substrates, triggering rereplication","Pevonedistat (MLN4924), a specific inhibitor of the NEDD8 activating enzyme (NAE),",High
+335,T32,N,Principle,Combined inhibitors acting on different sites suppresses resistant cells ,"..Pevonedistat additionally synergized with the BRAF kinase inhibitor PLX4720 to inhibit BRAF melanoma, and suppressed PLX4720-resistant melanoma cells",High
+336,T32,N,Means,CRISPR/Cas9-mediated heterozygous deletion,CRISPR/Cas9-mediated heterozygous deletion of CDKN1A (encoding p21) or SET8 ,High
+337,T32,N,Means,"Pevonedistat (MLN4924), a NAE inhibitor","Pevonedistat (MLN4924), a specific inhibitor of the NEDD8 activating enzyme (NAE)",High
+338,T32,N,Means,Melanoma cell line panel; nude mouse ,melanoma cell lines in vitro; nude mice,High
+339,T32,N,Purpose,Identify therapeutic targets for melanoma,...These findings show a significant promise for targeting CRL4(CDT2) therapeutically.,High
+340,T33,N,Phenomenon,HNH domain transitions through multiple conformations before docking,HNH domain transitions between multiple conformations before docking,High
+341,T33,N,Phenomenon,divalent-cation-dependent HNH docking,HNH docking requires divalent cations,High
+342,T33,N,Principle,"Mismatches prevent the transition to the active conformation, avoiding cleavage at stably bound off-target site","prevent transitions from the checkpoint intermediate to the active conformation, providing selective avoidance of DNA cleavage at stably bound off-target sites.",High
+343,T33,N,Principle,A conformational checkpoint between DNA binding and cleavage determines whether bound DNA is cut,a conformational checkpoint between DNA binding and cleavage…,High
+344,T33,N,Means,Cas9 with guide RNA and DNA targets,..the DNA target and guide RNA…,High
+345,T33,N,Means,mismatched sequences ,Sequence mismatches,High
+346,T33,N,Purpose,Determine how Cas9 discriminates targets after binding,...Sequence mismatches between the DNA target and guide RNA prevent transitions,High
+347,T33,N,Purpose,Explain avoidance of cleavage at off-target sites,..selective avoidance of DNA cleavage at stably bound off-target sites,High
+348,T34,N,Phenomenon,WNK kinases activate SLC12 cotransporters via  SPAK/OSR1,These cotransporters are phosphorylated and activated indirectly by With-No-Lysine (WNK) kinases,High
+349,T34,N,Principle,An sgRNA targeting exon 1 produces indels that abolish protein expression,"single-guide RNA (sgRNA) targeting exon 1 of the WNK1 gene, which produced indels that abolished WNK1 protein expression.",High
+350,T34,N,Principle,Deleting one WNK from cells natively expressing the network resolves its individual contribution.,Deletion of specific WNKs from cells that natively express a functional WNK-SPAK/OSR1 network will help resolve these knowledge gaps. ,High
+351,T34,N,Means,Single sgRNA targeting WNK1 exon 1,"by using a single-guide RNA (sgRNA) targeting exon 1 of the WNK1 gene, which produced indels that abolished WNK1 protein expression.",High
+352,T34,N,Means,RNA-guided CRISPR/Cas9 endonuclease,using RNA-guided clustered regularly interspaced short palindromic repeats/Cas9 endonucleases.,High
+353,T34,N,Means,SPAK/OSR1 activity assay; hypertonic stress challenge,"low baseline SPAK/OSR1 activity and …..regulatory volume increase after hypertonic stress, ",High
+354,T34,N,Purpose,resolve the relative contributions of coexisting WNK kinases to SPAK/OSR1 activation and salt transport,Understanding SPAK/OSR1 activation and salt transport remains incompletely understood.,High
+355,T34,N,Purpose,Knock out full-length WNK1 selectively,a simple method to selectively knock out full-length WNK1 expression from mammalian cells ,High
+356,T35,N,Phenomenon,nuoCDE disruption as a strategy for improved hydrogen production ,"disruption of nuoCDE,  ",High
+357,T35,N,Phenomenon,small RNA overexpression as a strategy for improved hydrogen production ,"overexpression of the small RNA RyhB and of NadE to regulate global anaerobic metabolism,",High
+358,T35,N,Phenomenon,redistribution of metabolic flux as a strategy for improved hydrogen production ,Knockout of nuoCD or nuoCDE and the overexpression of nadE in E. aerogenes resulted in a redistribution of metabolic flux and improved the hydrogen yield.  ,Medium
+359,T35,N,Phenomenon,Hydrogen produced via the NADH pathway increased significantly in IAM1183-CDE,The hydrogen yields from IAM1183-CD(‚àÜnuoC/‚àÜnuoD) and IAM1183-CDE (‚àÜnuoC/‚àÜnuoD/‚àÜnuoE) increased,Medium
+360,T35,N,Principle,Impairing NADH dehydrogenase activity by knocking out nuoCD or nuoCDE improves hydrogen yield,NADH dehydrogenase activity was impaired by knocking out nuoCD or nuoCDE in E. aerogenes IAM1183,High
+361,T35,N,Principle,Combining strategies for a more economic and efficient bioprocess for hydrogen production, A combination of strategies would be a novel approach for developing a more economic and efficient bioprocess for hydrogen production,High
+362,T35,N,Principle,CRISPR-Cas9 edits genes in E. aerogenes to develop an engineered strain,CRISPR-Cas9 system to explore the consequent effect on hydrogen production,High
+363,T35,N,Means,CRISPR-Cas9 system,using the CRISPR-Cas9 system to explore the consequent effect on hydrogen production,High
+364,T35,N,Means,Overexpression of NadE and the small RNA RyhB,overexpression of the small RNA RyhB and of NadE,High
+365,T35,N,Means,Metabolic flux analysis, Metabolic flux analysis indicated that increased expression of RyhB,High
+366,T35,N,Means,E. aerogenes IAM1183 and derived strains,"..of IAM1183/N, IAM1183-CD/N, and IAM1183-CDE/N ",High
+367,T35,N,Purpose,Clarify how perturbation of NADH influences the yield of hydrogen gas,"to clarify the effect of nuoCDE, RyhB, and NadE on hydrogen production",High
+368,T35,N,Purpose,Improve hydrogen production in E. aerogenes,to develop our engineered strain for hydrogen production.,High
+369,T35,N,Purpose,Develop a more economic and efficient bioprocess for hydrogen production,developing a more economic and efficient bioprocess for hydrogen production in E. aerogenes.,High
+370,T36,N,Phenomenon,HDR repairs double-stranded breaks following the gene editing process,HDR repairs double-stranded breaks following the gene editing process,High
+371,T36,N,Phenomenon,Extracellular and cellular barriers block delivery of genetic material,... protecting the genetic material and bypassing extracellular and cellular barriers,High
+372,T36,N,Principle,Vectors protect editing reagents and bypass barriers,gene therapy vectors ...protecting the genetic material and bypassing ... barriers,High
+373,T36,N,Principle,Viral vectors integrate therapeutic genes into the genom,viral vectors have demonstrated highly specific targeted delivery and high transduction efficiency.,High
+374,T36,N,Means,CRISPR-Cas9,CRISPR-Cas9 technology ..,High
+375,T36,N,Means,viral vectors ,Viral vectors can be used to effectively deliver gene therapies ,High
+376,T36,N,Means,Homology-Directed Repair (HDR),..mutations employing 2 techniques: Homology-Directed Repair (HDR),High
+377,T36,N,Means,prime editing,"prime editing, a newer technology, edits and repairs DNA without creating double-stranded breaks.",High
+378,T36,N,Purpose,Deliver editing reagents effectively,to effectively deliver gene editing reagents ,High
+379,T36,N,Purpose,Select vectors for efficacy and safety,range of available viral vector technologies used for gene delivery,High
+380,T36,N,Purpose,Compare prime editing with HDR,ompares prime editing with HDR with an emphasis on the application of repairing the CFTR deletion mutation that causes cystic fibrosis.,High
+381,T37,N,Phenomenon,Genomic integration of expression cassettes,Genomic integration of expression cassettes,High
+382,T37,N,Principle,Integration at a target locus achieves overexpression and knockout simultaneously,"two copies of XYL1, XYL2, and XYL3 were integrated into the loci of PHO13 and ALD6 for achieving overexpression of heterologous genes and knockout of endogenous genes simultaneously. ",High
+383,T37,N,Principle,Co-transforming guide RNAs with linearized donor fragments integrates genes at the cut loci,..plasmids containing guide RNAs targeting PHO13 and ALD6 were sequentially co-transformed with linearized DNA fragments,High
+384,T37,N,Principle,Cas9-based refactoring avoids depositing undesirable genetic elements,Cas9/CRISPR-based technique to refactor an efficient xylose-fermenting yeast strain,High
+385,T37,N,Means,Cas9/CRISPR; S. cerevisiae expressing Cas9,,High
+386,T37,N,Means,Cas9-based refactoring avoids depositing undesirable genetic elements,the Cas9/CRISPR-based technique to refactor an efficient xylose-fermenting yeast strain without depositing any undesirable genetic elements in resulting strains,High
+387,T37,N,Means,plasmids containing guide RNAs targeting PHO13 and ALD6,plasmids containing guide RNAs targeting PHO13 and ALD6,High
+388,T37,N,Purpose,Integrate heterologous genes and delete endogenous genes,...achieving overexpression of heterologous genes and knockout of endogenous genes simultaneously,High
+389,T37,N,Purpose,Provide a detailed procedure applicable to any host strain,a detailed procedure for refactoring xylose-fermenting yeast using any host strains,High
+390,T37,N,Purpose,Remove antibiotic resistance markers for large-scale fermentation,The refactored strains using our procedure could be readily used for large-scale fermentations since they have no antibiotic resistant markers.,High
+391,T38,N,Phenomenon,Cold stress at the booting stage ,Cold stress at the booting stage severely disrupts pollen development and drastically reduces grain yield in rice.,High
+392,T38,N,Phenomenon,OsPPR7-cold tolerance regulation thorugh fine-tuning ABA biosynthesis and ROS homeostasis,OsPPR7...regulates cold tolerance by fine-tuning …ABA biosynthesis and ROS homeostasis,High
+393,T38,N,Phenomenon,Selective sweep on the Hap_I haplotype in temperate japonica rice,"...superior cold-tolerant haplotype Hap_I showing strong selective sweep signals in temperate japonica rice, indicating its role in adaptation to high-atitude environments. ",Medium
+394,T38,N,Phenomenon,a promoter mutation reduces cold-induced expression ,"OsPPR7, encoding a PLS-class pentatricopeptide repeat (PPR) protein, showed strong cold-induced expression in anthers.",Medium
+395,T38,N,Principle,Genetic complementation confirms the causal mutation,"A promoter mutation in OsPPR7 was linked to the csb1 phenotype, as confirmed by genetic complementation. ",High
+396,T38,N,Principle,KO and overexpression show gene regulation in both directions,"CRISPR/Cas9 knockout lines displayed increased cold sensitivity and severe pollen sterility, whereas overexpression enhanced tolerance. ",High
+397,T38,N,Principle,Natural variation in OsPPR7 is identified through haplotype analysis ,Haplotype analysis across diverse germplasm identified natural variation in OsPPR7,High
+398,T38,N,Means,MutMap use for a 26.3–27.0 Mb interval on chromosome 8," Using MutMap, we mapped the causal locus to a 26.3-27.0 Mb interval on chromosome 8",High
+399,T38,Y,Means,CRISPR/Cas9 knockout lines,CRISPR/Cas9 knockout lines ,High
+400,T38,Y,Means,Haplotype analysis,Haplotype analysis across diverse germplasm,High
+401,T38,N,Means,EMS-mutagenized population of japonica variety MK1; csb1 mutant,an EMS-mutagenized population of the cold-tolerant japonica variety MK1,High
+402,T38,N,Means,Genetic complementation,as confirmed by genetic complementation. ,High
+403,T38,N,Purpose,Uncover the genetic basis of cold tolerance,Uncovering the genetic basis of cold tolerance is essential for breeding resilient varieties. ,High
+404,T38,N,Purpose,Provide a genetic target for improving rice climate resilience,provides a valuable genetic target for improving rice climate resilience.,High
+405,T38,N,Purpose,Establish OsPPR7’s mechanism of action,Our study identifies OsPPR7 as a novel positive regulator of reproductive stage cold tolerance ,High
+406,T39,N,Phenomenon,prophage maintenance system,prophage maintenance system killer protein,High
+407,T39,N,Phenomenon,Restriction/modification systems,presence of two R/M systems ,High
+408,T39,N,Principle,The repeat locus may provide a unique molecular signature L acidophilus,three unique regions designated as potential autonomous units (PAUs) were identified. These units resemble a unique structure and bear characteristics of both plasmids and phages.,High
+409,T39,N,Means,"Complete genome sequence, 1,993,564 nt, no plasmids","complete genome is 1,993,564 nt and devoid of plasmids",High
+410,T39,N,Means,"Three potential autonomous units, with two R/M systems and a prophage maintenance killer protein",Analysis of the three PAUs revealed the presence of two R/M systems and a prophage maintenance system killer protein,High
+411,T39,N,Means,"Spacers interspersed direct repeat locus, 32 nearly perfect 29-bp repeats",A spacers interspersed direct repeat locus containing 32 nearly perfect 29-bp repeats,High
+412,T39,N,Purpose,Identify features that contribute to gastric survival,these features within the genome sequence of L. acidophilus are likely to contribute to the organisms' gastric survival,High
+413,T39,N,Purpose,Identify features that promote interaction with intestinal mucosa and microbiota,...promote interactions with the intestinal mucosa and microbiota.,High
+414,T40,N,Unsure,,,Low
+415,T41,N,Phenomenon,nucleotide sequence divergence,nucleotide sequence divergence at synonymous sites is high,High
+416,T41,N,Phenomenon,H3 amino acid sequence homogeneity , purifying selection is the major force for maintaining H3 amino acid sequence homogeneity,High
+417,T41,N,Phenomenon, birth-and-death process under strong purifying selection, birth-and-death process under strong purifying selection,Medium
+418,T41,N,Phenomenon,synonymous-site divergence,"synonymous-site divergence was low, .. ",High
+419,T41,N,Phenomenon,recent gene duplication ,...recent gene duplication appeared to be a better explanation than gene conversion.,High
+420,T41,N,Principle,Low synonymous divergence discriminates recent duplication from gene conversion, purifying selection is the major force for maintaining H3 amino acid sequence homogeneity,High
+421,T41,N,Principle,Synonymous-site divergence distinguishes purifying selection from concerted evolution,synonymous-site divergence was low .. than gene conversion.. undergo concerted evolution,High
+422,T41,N,Principle,Protein structure comparison indicates ancestral gene type,structure of H3 proteins revealed ,High
+423,T41,N,Means,H3 protein structure analysis,analyses of the structure of H3 proteins,High
+424,T41,N,Means,Synonymous-site divergence analysis,nucleotide sequence divergence at synonymous sites is high,High
+425,T41,N,Means,"H3 nucleotide and amino acid sequences, within and between species",evolution of histone 3 (H3) genes that are not arranged in large clusters of tandem repeats,High
+426,T41,N,Means,Phylogenetic analysis,"other observations on gene inactivation, organization, and phylogeny",High
+427,T41,N,Purpose,Examine the evolution of non-tandemly arranged H3 genes,examines the evolution of histone 3 (H3) genes that are not arranged in large clusters of tandem repeats. ,High
+428,T41,N,Purpose,understand the ancestral H3 gene type differing from higher eukaryotes,histones of higher eukaryotes might have evolved from a replication-independent-like H3 gene.,High
+429,T42,N,Phenomenon,phage-mediated horizontal gene transfer (HGT),bacteriophages …  driving the evolution of the rumen microbiome through HGT,High
+430,T42,N,Phenomenon,Kill-the-winner dynamics between viral and microbial populations,kill-the-winner-community dynamic between the viral and microbial populations in the rumen.,Medium
+431,T42,N,Phenomenon,microbial and viral population dynamics ,microbial and viral populations appeared to be closely associated,High
+432,T42,N,Phenomenon,dominant viral infection of dominant microbial phyla, dominant viral types were those that infect the dominant microbial phyla,Medium
+433,T42,N,Principle,CRISPR sequences and mobile elements in a genome indicate interactions with bacteriophages,"In our analysis of the Ruminococcus flavefaciens genomes, there were several mobile elements and clustered regularly interspaced short palindromic repeat (CRISPR) sequences detected",High
+434,T42,N,Principle,Correlated taxon distribution between microbiome and virome indicates host-phage coupling,The correlation between the distribution of taxa in the microbiome and virome sequences ,High
+435,T42,N,Means,Comparative genomics of multiple Ruminococcus flavefaciens strains,use a comparative genomics approach ,High
+436,T42,N,Means,Rumen viral metagenome (virome) survey, conducting a survey of rumen viral metagenome (virome),High
+437,T42,N,Means,Comparison of virome and microbiome sequences,subsequent comparison of the virome and microbiome sequences,High
+438,T42,N,Means,Detection of CRISPR loci and mobile elements,presence of CRISPR loci in the R. flavefaciens genomes,High
+439,T42,N,Purpose,Determine whether genetic information is shared between viral and microbial populations, to ascertain if there was genetic information shared between these populations. ,High
+440,T42,N,Purpose,Assess evolutionary mechanisms at work in the rumen environment,to assess the potential evolutionary mechanisms at work in the rumen environment.,High
+441,T42,N,Purpose,Establish the role of bacteriophages in rumen community dynamics,assess the role of viruses in the dynamics of the rumen ecosystem. ,High
+442,T42,N,Purpose,Assess diversity and HGT potential in R. flavefaciens,assessing the diversity and potential for horizontal gene transfer (HGT) of multiple strains of the cellulolytic rumen bacterium,High
+443,T43,N,Phenomenon,Loss of biosynthetic pathways through adaptation to high-nutrient environment ,"the genome sequence reveals that biosynthetic pathways for purines, most amino acids, and most cofactors are absent. ",Medium
+444,T43,N,Phenomenon,Biosynthetic loss without becoming an obligate parasite,T. pendens has fewer biosynthetic enzymes than obligate intracellular parasites … ,High
+445,T43,N,Principle,finding absent of pathways indicates dependance on external nutrients ,"T. pendens is a sulfur-dependent, anaerobic heterotroph isolated from a solfatara in Iceland.",High
+446,T43,N,Principle,genome analysis reveals metabolic capabilities not known before ,..but the genome revealed a substantial ability to grow on carbohydrates. ,High
+447,T43,N,Principle,Predicted expression indicates which metabolic functions are present,"The predicted highly expressed proteins …. do not include proteins encoded, but ABC transporters for carbohydrates and peptides and CRISPR-associated proteins.",High
+448,T43,N,Means,Complete genome sequence,..the genome sequence reveals ,High
+449,T43,N,Means,Prediction of highly expressed proteins,The predicted highly expressed proteins,High
+450,T43,N,Purpose,Report the complete genome of T. pendens,We report the complete genome of Thermofilum pendens,High
+451,T43,N,Purpose,Identify metabolic enzyme machinery ,...biosynthetic pathways,High
+452,T44,N,Phenomenon,"SRSR sequence, size, and spacing constant within a cluster, but vary between clusters","The sequence, size, and spacing of the repeats are generally constant within a cluster but vary between clusters.",High
+453,T44,N,Phenomenon,SSO454 protein binds one side of the repeat and opens the opposite side of the DNA structure ,"It binds specifically to DNA fragments carrying double and single repeat sequences, binding on one side of the repeat structure, and producing an opening of the opposite side of the DNA structure.",High
+454,T44,N,Phenomenon,Repeat sequence identity shared between a conjugative plasmid and the chromosome,conjugative plasmid pNOB8 contains a small cluster of six repeats that are identical in sequence to one of the repeat variants in the S. solfataricus chromosome. ,Medium
+455,T44,N,Phenomenon,restricted orthologue distribution ,orthologs of SSO454 were only detected in species within the Sulfolobus genus and in the closely related Acidianus genus,Medium
+456,T44,N,Principle,Amplified repeat sequences isolate repeat-binding proteins from cell extracts,Repeats from the pNOB8 cluster were amplified and tested for protein binding with cell extracts from S. solfataricus,High
+457,T44,N,Principle,Recombinant protein reproduces the same binding properties confirms the identification,"recombinant protein, expressed in Escherichia coli, showed the same binding properties to the SRSR repeat as the native one.",High
+458,T44,N,Means,"pNOB8 repeat cluster, amplified", pNOB8 cluster were amplified ,High
+459,T44,N,Means,S. solfataricus cell extracts; protein purification and sequencing,A 17.5-kDa SRSR-binding protein was purified from the cell extracts and sequenced. ,High
+460,T44,N,Means,Recombinant SSO454 expressed in E. coli,"recombinant protein, expressed in Escherichia coli,",High
+461,T44,N,Means,Binding assays with single and double repeat fragments,It binds specifically to DNA fragments carrying double and single repeat sequences,High
+462,T44,N,Means,Orthologue search, orthologs of SSO454 were only detected in species ,High
+463,T44,N,Purpose,Identify proteins binding the SRSR repeats,title: Genus-Specific Protein Binding to the Large Clusters of DNA Repeats ,High
+464,T44,N,Purpose,Determine SSO454’s function,"The protein is N terminally modified and corresponds to SSO454, an open reading frame of previously unassigned function",High
+465,T44,N,Purpose,Establish how SRSR clusters are higher-order structured,...that may be essential for higher-order stucturing of the SRSR clusters.,High
+466,T45,N,Phenomenon,phage-infection disrupts acidification capacity in LAB ,...incidence of phages of lactic acid bacteria in milk industry and their effects on acidification ability of LAB ,High
+467,T45,N,Phenomenon,Phage stability across repeated replication,isolated phages were quite stable and showed no reduction in infectivity even after 20 daily replications,Medium
+468,T45,N,Phenomenon,Varying phage sensitivity between starter types,Considerable difference in phage sensitivity was observed among different starters,Medium
+469,T45,N,Principle,Acidification reduction indicates phage presence in a sample,"The majority of samples showed reduction higher than 10%, although only 65% were phage positive. ",Medium
+470,T45,N,Principle,Exposing LAB starters to phages to test resistance ,A pool of bacteriophages was prepared from isolates and inoculated in 12 commercial lactic starters. ,High
+471,T45,N,Means,"16 phage isolates, specific for L. lactis, L. diacetylactis",16 bacteriophages were isolated,High
+472,T45,N,Means,Acidification tests,showed reduced acidification.,High
+473,T45,N,Means,"Bacterial strains isolated from starters, tested for phage resistance",commercial lactic acid starters were studied. Cheese whey samples (33 samples) were collected from 17 factories,High
+474,T45,N,Purpose,Determine the incidence of phage infection in LAB in the millk industry ,incidence of phages of lactic acid bacteria in milk industry ,High
+475,T45,N,Purpose,Assess phage effects on commercial starter acidification,phages of lactic acid bacteria in milk industry and their effects on acidification ability ,High
+476,T45,N,Purpose,Evaluate phage resistance of starter strains,"Considerable difference in phage sensitivity was observed among different starters (BD, D, O and L. diacetylactis).",High
+477,T46,N,Phenomenon,crRNA hybridising with tracrRNA to guide Cas9,"synthetic CRISPR RNA (scrRNA), which in combination with unmodified transactivating crRNA (tracrRNA) …",High
+478,T46,N,Phenomenon,chemical modifications protect against nuclease digestion and stabilize RNA-RNA interactions,rational chemical modifications known to protect against nuclease digestion and stabilize RNA-RNA interactions / tracrRNA hybridization region of CRISPR RNA (crRNA) ,High
+479,T46,N,Principle,A chemically modified synthetic crRNA yields an enhanced scrRNA to replace the natural guide RNA for Cas-9 systems,"... (scrRNA), which in combination with unmodified transactivating crRNA (tracrRNA) is shown to functionally replace the natural guide RNA in the CRISPR-Cas9 nuclease system",High
+480,T46,N,Principle,"By modifying the tracrRNA hybridization region, enhance activity over unmodified crRNA is obtained ", .. yields a scrRNA with enhanced activity compared with,High
+481,T46,N,Means,29-nucleotide chemically modified synthetic crRNA (scrRNA),29-nucleotide synthetic CRISPR RNA (scrRNA),High
+482,T46,N,Means,Unmodified tracrRNA,unmodified transactivating crRNA (tracrRNA),High
+483,T46,N,Means,Single guide RNA for comparison,to the previously published single guide RNA,High
+484,T46,N,Means,(CRISPR)-Cas9 nuclease system,(CRISPR)-Cas9 nuclease system,High
+485,T46,N,Purpose,Mediate efficient genome editing in human cells,mediate efficient genome editing in human cells,High
+486,T46,N,Purpose,"provide a platform for therapeutic applications, especially for nervous system disease","provide a platform for therapeutic applications, especially for nervous system disease",High
+487,T46,N,Purpose,Control Cas9 nuclease activity,synthetic CRISPR RNAs to activate and then silence Cas9 nuclease activity.,High
+488,T47,N,Phenomenon,tuberculosis transmission ,"nosocomial transmission of multidrug-resistant (MDR) Mycobacterium tuberculosis, ",High
+489,T47,N,Phenomenon,IS6110 RFLP patterns change within a transmission chain,S6110 restriction fragment length polymorphism (RFLP) patterns ,High
+490,T47,N,Phenomenon,Spoligotype stability under IS6110 variation,nine other isolates from related cases also exhibited identical spoligotypes but slightly different RFLP patterns,High
+491,T47,N,Phenomenon,MDR strain-dependent rate of IS6110 change,"some MDR strains, the evolutionary clock of IS6110 RFLP may run too fast ",High
+492,T47,N,Principle,A genetic marker changing faster than the period under study breaks the inference from pattern identity to recent transmission,the evolutionary clock of IS6110 RFLP may run too fast for reliable interpretation of strain typing results over a period of a few years.,High
+493,T47,N,Means,IS6110 RFLP typing,IS6110 restriction fragment length polymorphism (RFLP) patterns ,High
+494,T47,N,Means,Spoligotyping,spoligotype patterns,High
+495,T47,N,Means,Resistance profiles,resistance profiles,High
+496,T47,N,Means,"24 patients, mostly HIV-positive, with case information","..on 24, mostly human immunodeficiency virus-positive patients, were collected",High
+497,T47,N,Purpose,Study possible nosocomial transmission of MDR tuberculosis,To study possible nosocomial transmission of multidrug-resistant (MDR) Mycobacterium tuberculosis,High
+498,T47,N,Purpose,Assess the reliability of IS6110 typing over a few years,IS6110 RFLP may run too fast for reliable interpretation of strain typing results over a period of a few years.,High
+499,T48,N,Phenomenon,transgene expression,..because it eliminates positional effects on transgene expression,High
+500,T48,N,Phenomenon,Targeted DNA integration,.. Targeted DNA integration is widely used,High
+501,T48,N,Phenomenon,single- and double crossover recombination,double crossover event … single-crossover recombination,High
+502,T48,N,Phenomenon,site-specific double-strand breaks ,generated site-specific double-strand breaks using ZFNs ,High
+503,T48,N,Phenomenon,sgRNA-binding site disruption within the duplicated region by Cas9 systems,"CRISPR/Cas9 system tended to disrupt the sgRNA-binding site within the duplicated homology region, , preventing the integration of another plasmid donor.",Medium
+504,T48,N,Phenomenon,ZFN binding sites were less disruptive than Cas9 target sites,"In contrast, ZFNs were less likely to completely disrupt their binding sites, allowing the successive integration of additional plasmid donor copies. ",Medium
+505,T48,N,Principle,A single homology arm gives direction-dependent integration,"homology-independent NHEJ mechanism has recently been shown to improve efficiency of integrating larger DNA fragments at targeted sites, but integration through this mechanism is direction-independent.",High
+506,T48,N,Principle,"Homology-region duplication leaves an intact target, permitting successive integration of further donor copies","The CRISPR/Cas9 system tended to disrupt the sgRNA-binding site within the duplicated homology region, preventing the integration of another plasmid donor. ",High
+507,T48,N,Means,ZFNs ,using ZFNs ,High
+508,T48,N,Means,Southern blot analysis,Southern blot analysis of clonal cells. ,High
+509,T48,N,Means,CRISPR/Cas9,CRISPR/Cas9 in the human CCR5 gene,High
+510,T48,N,Means,Donor plasmid with a 1.6-kb homology fragment,donor plasmid containing a 1.6-kb fragment homologous to the CCR5 gene in the genome,High
+511,T48,N,Means,Two human cell lines; clonal analysis,the genomes of two human cell lines,High
+512,T48,N,Purpose,Integrate large DNA fragments at targeted sites,..integrating larger DNA fragments at targeted sites,High
+513,T48,N,Purpose,Achieve direction-dependent integration,the direction-dependent integration of large DNA fragments,High
+514,T48,N,Purpose,Promote multi-copy integration for recombinant protein expression,in promoting multi-copy integration for high-level expression of recombinant proteins.,Medium
+515,T49,N,Phenomenon,CRISPR adaptive immune systems,CRISPR adaptive immune systems,High
+516,T49,N,Phenomenon,Module exchange between different archaeal CRISPR systems,Extensive exchange having occurred  in modules of archaeal CRISPR systems,High
+517,T49,N,Phenomenon,Phyla-specific divergence in some Type III systems,"About 70% of the Type III systems fall into the universal subtypes III-A and III-B but the remainder, some of which are phyla-specific, diverge significantly in Cas protein sequences",High
+518,T49,N,Principle,Specific gene linkage to interference modules indicates accessory cofuntional proteins ,"Several accessory proteins were identified that show a specific gene linkage, especially to Type III interference modules, and these may be cofunctional with the CRISPR systems.",High
+519,T49,N,Principle,Concatenated Cas protein sequences and interference-module gene synteny classify systems into types and subtypes,"concatenated Cas protein sequences and gene synteny of the interference modules … Type I or Type III systems. For Type I, subtypes I-A, I-B, and I-D ",High
+520,T49,N,Principle,Clustering Cas proteins by profile-profile comparison assigns genes to cassettes and modules,Then cas genes were assigned to gene cassettes and to functional modules for adaptation and interference.,High
+521,T49,N,Means,all available completed genomes of archaea,all available completed genomes of archaea,High
+522,T49,N,Means,Gene synteny analysis,gene synteny of the interference modules.,High
+523,T49,N,Means,Profile-profile clustering of proteins encoded within and proximal to CRISPR-cas loci,"all proteins encoded within, and proximal to, CRISPR-cas loci, clustered and analyzed using a profile-profile approach",High
+524,T49,N,Purpose,Analyse CRISPR adaptive immune systems across archaea,CRISPR adaptive immune systems were analyzed,High
+525,T49,N,Purpose,Classify systems into types and subtypes,"universal Type I or Type III systems. For Type I, subtypes I-A, I-B, and I-D dominate but the data support the division of subtype I-B into two subtypes, designated I-B and I-G. ",High
+526,T49,N,Purpose,Provide criteria for assigning newly sequenced systems,Criteria are presented for assigning newly sequenced archaeal CRISPR systems to the different subtypes. ,Medium
+527,T49,N,Purpose,Identify accessory proteins possibly cofunctional with CRISPR systems,Several accessory proteins were identified ...cofunctional with the CRISPR systems,Medium
+528,T50,N,Phenomenon,Nanomaterial-based biosensory ,Nanomaterial-based biosensors are revolutionizing disease diagnostics ,High
+529,T50,N,Principle,integrating several technologies and capabilities ,"integrating  machine learning (ML), nanomaterial's, and advanced bio sensing technologies, focusing on their applications in multimarket disease diagnostics",High
+530,T50,N,Principle,Multifunctional sensors detect multiple biomarkers simultaneously with high sensitivity and specificity,,High
+531,T50,N,Principle,Machine learning improves data analysis for detection in complex clinical settings,"machine learning techniques facilitates improved data analysis, offering precise detection in complex clinical settings ",High
+532,T50,N,Principle,detection improved through the use of multiple biomarkers ,"multiple biomarkers with high sensitivity and specificity, essential for accurate disease diagnosis. ",High
+533,T50,N,Means,"Nanomaterials — carbon nanotubes, graphene, gold nanoparticles",Review on nanomaterials health care ,High
+534,T50,N,Means,,,High
+535,T50,N,Purpose, target applications in multimarket disease diagnostics,applications in multimarket disease diagnostics,High
+536,T50,N,Purpose,Detect multiple biomarkers simultaneously for accurate disease diagnosis,applications in multimarket disease diagnostics,High
+537,T50,N,Purpose,"Review ML, nanomaterial and biosensing integration","minireview explores the integration of machine learning (ML), nanomaterial's, and advanced bio sensing technologies",High
+538,T50,N,Purpose,"Address scalability, biocompatibility and energy efficiency challenges	","addressing the ongoing challenges in scalability, biocompatibility, and energy efficiency",High

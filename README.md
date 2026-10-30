@@ -102,7 +102,7 @@ The frozen prompt was run on 50 test abstracts that a trained research assistant
 
 Per-type kappa (adjudicated) runs from 0.52 for principle to 0.85 for means. Full tables, the matching rule and per-time-bin results are in [`evaluation/scores.md`](evaluation/scores.md). The model's test-set output, the test IDs, the adjudication decisions (IDs and Y/N only), confusion tables for both matchings, and the script that drew the test set are in `evaluation/`.
 
-Rerunning the scoring needs the human-coded gold set (the coder's workbook and the 50 test abstracts), available on request. With the two files saved as `evaluation/gold/human_coding.xlsx` and `evaluation/gold/test_abstracts.csv`:
+The human coding is released in `evaluation/human_coding.csv`: one row per row of the coder's sheet, including rows the scoring leaves out. Abstract text is not in the repository. The script fetches each test abstract by work ID from the OpenAlex API (no key needed; `OPENALEX_API_KEY` is used if set) and checks it against the hash of the text as coded, recorded in `evaluation/test_set.csv`. Two abstracts changed in OpenAlex after coding. The coded text of one, which is CC BY, is in `evaluation/test_abstracts_cc_by.csv` with its licence and DOI. The other is fetched from its Europe PMC preprint record. Abstracts are cached in `evaluation/abstract_cache/`. To rerun:
 
 ```bash
 cd tool
