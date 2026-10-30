@@ -13,9 +13,11 @@ Copyright (c) 2026 The authors
    in its row, and is attributed to its authors by the DOI in that row.
 
 3. Evidence spans. The evidence columns (in results/components.parquet,
-   evaluation/human_coding.csv and evaluation/model_output/outputs.jsonl) are
-   short quotations from the original abstracts. They remain under their
-   publishers' terms and are not covered by the CC BY 4.0 licence above.
+   evaluation/human_coding.csv and evaluation/model_output/outputs.jsonl)
+   contain verbatim excerpts of the original abstracts, kept so the coding can
+   be checked; the abstracts remain under their publishers' terms and are
+   freely available from OpenAlex. The evidence columns are not covered by the
+   CC BY 4.0 licence above.
 
 4. Code. Code anywhere in this repository is licensed under the MIT licence;
    see LICENSE.

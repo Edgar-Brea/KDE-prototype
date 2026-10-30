@@ -66,7 +66,7 @@ Output goes to `tool/runs/<timestamp>_example/`:
 
 ## CRISPR results
 
-All in `results/`. No abstract text is included: OpenAlex IDs, metadata and the short evidence spans only. Any abstract can be fetched from OpenAlex by ID (`https://api.openalex.org/works/<work_id>`).
+All in `results/`. No full abstract text is included: OpenAlex IDs, metadata and the evidence columns only, which contain verbatim excerpts of the original abstracts, kept so the coding can be checked. Any abstract can be fetched from OpenAlex by ID (`https://api.openalex.org/works/<work_id>`).
 
 | File | Contents |
 |---|---|
@@ -130,4 +130,4 @@ LICENSE-DATA      CC BY 4.0, for the data files; terms for the abstracts and evi
 
 ## Licence
 
-Code is under the MIT licence ([`LICENSE`](LICENSE)). The data files in `results/` and `evaluation/` are under CC BY 4.0. The abstracts in `tool/example/` and `evaluation/test_abstracts_cc_by.csv` keep their own CC BY licences, attributed by DOI. Evidence spans are short quotations from the original abstracts and remain under their publishers' terms. See [`LICENSE-DATA`](LICENSE-DATA).
+Code is under the MIT licence ([`LICENSE`](LICENSE)). The data files in `results/` and `evaluation/` are under CC BY 4.0. The abstracts in `tool/example/` and `evaluation/test_abstracts_cc_by.csv` keep their own CC BY licences, attributed by DOI. The evidence columns contain verbatim excerpts of the original abstracts, kept so the coding can be checked; the abstracts remain under their publishers' terms and are freely available from OpenAlex. See [`LICENSE-DATA`](LICENSE-DATA).
